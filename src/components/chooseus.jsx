@@ -4,15 +4,14 @@ import 'aos/dist/aos.css';
 import './chooseus.css';
 
 const WhyChooseUs = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      offset: 300,
-      delay: 100,
-      once: false,
-      easing: 'ease-in-out',
-    });
-  }, []);
+   useEffect(() => {
+       AOS.init({
+         duration: 300,     // smooth and fast animation
+         offset: 100,       // animate sooner
+         once: false,        // animation happens only once
+       });
+     }, []);
+    
 
   return (
     <div className="why-choose-section">

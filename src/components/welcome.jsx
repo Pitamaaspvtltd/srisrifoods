@@ -1,38 +1,45 @@
-// WelcomeSection.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './welcome.css';
+
 import riceBowlImage from '../assets/Rice.png'; 
 import logo2 from '../assets/Logo_01.png';
 
 const WelcomeSection = () => {
+   useEffect(() => {
+       AOS.init({
+         duration: 300,     // smooth and fast animation
+         offset: 100,       // animate sooner
+         once: false,        // animation happens only once
+       });
+     }, []);
+    
   return (
     <section className="welcome-section">
       <div className="welcome-container">
         
-        <div className="image-container">
+        <div className="image-container" data-aos="fade-right">
           <div className="rice-bowl">
             <img src={riceBowlImage} alt="Bowl of rice with wooden scoop" />
           </div>
         </div>
         
-        <div className="content-container">
-          <h2 className="welcome-heading">Welcome to</h2>
+        <div className="content-container" data-aos="fade-left">
+          <h2 className="welcome-heading" data-aos="fade-up">Welcome to</h2>
           
-          <div className="logo-container">
+          <div className="logo-container" data-aos="zoom-in" data-aos-delay="200">
             <img src={logo2} alt="Sri Sri Foods Logo" />
           </div>
           
-          <div className="description">
+          <div className="description" data-aos="fade-up" data-aos-delay="400">
             <p>
               Established in 1987, Sri Sri Foods has earned a trusted name in the global rice industry by consistently delivering premium-quality rice varieties. With over three decades of excellence, we proudly cater to markets across the Middle East and CIS Asian countries, bringing the authentic taste of India to international kitchens.
-              {/* <br /><br /> */}
               We specialize in all types of rice varieties, carefully sourced, processed and packed to meet the highest standards of purity, aroma and grain quality. From Basmati to Non-Basmati, our diverse portfolio meets the culinary needs of global consumers.
-              {/* <br /><br />
-              Certified with ISO and FSSAI, Sri Sri Foods is committed to maintaining world-class food safety and quality assurance at every stage of our supply chain. Our dedication to quality, integrity and customer satisfaction continues to drive our growth as a globally trusted rice brand. */}
             </p>
           </div>
           
-          <div className="cta-container">
+          <div className="cta-container" >
             <button className="view-more-btn">
               <span>View More</span>
             </button>

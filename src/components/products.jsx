@@ -1,5 +1,7 @@
 // BasmatiRiceSection.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -10,25 +12,25 @@ import './product.css';
 function RiceCard({ rice, onEnquire }) {
   const [currentImage, setCurrentImage] = useState(rice.mainImage);
   const [currentVariant, setCurrentVariant] = useState(0); // Default to main variant
-  
+
   const handleThumbnailHover = (thumbnailSrc, variantIndex) => {
     setCurrentImage(thumbnailSrc);
     setCurrentVariant(variantIndex + 1); // +1 because variant 0 is the main/default
   };
-  
+
   const resetToDefaultImage = () => {
     setCurrentImage(rice.mainImage);
     setCurrentVariant(0); // Reset to default variant
   };
-  
+
   const getCurrentName = () => {
     return rice.variants && rice.variants[currentVariant]
       ? rice.variants[currentVariant].name
       : rice.name;
   };
-  
+
   return (
-    <div className="basmati-card">
+    <div className="basmati-card" data-aos="zoom-in">
       <div className="basmati-image-container">
         <img
           src={currentImage}
@@ -46,21 +48,22 @@ function RiceCard({ rice, onEnquire }) {
             onMouseEnter={() => handleThumbnailHover(thumb, index)}
             onMouseLeave={resetToDefaultImage}
           >
-            <img
-              src={thumb}
-              alt={`${
-                rice.variants && rice.variants[index + 1]
-                  ? rice.variants[index + 1].name
-                  : `${rice.name} thumbnail ${index + 1}`
-              }`}
-              className="basmati-thumbnail"
-            />
+      <img
+  src={thumb}
+  alt={
+    rice.variants && rice.variants[index + 1]
+      ? rice.variants[index + 1].name
+      : `${rice.name} thumbnail ${index + 1}`
+  }
+  className="basmati-thumbnail"
+/>
+
           </div>
         ))}
       </div>
-  
+
       <h3 className="basmati-title">{getCurrentName()}</h3>
-  
+
       <button
         className="basmati-enquire-button"
         onClick={() => onEnquire({ ...rice, selectedVariant: getCurrentName() })}
@@ -79,7 +82,7 @@ function EnquiryModal({ rice, onClose }) {
     phone: '',
     message: `I'm interested in ${rice.selectedVariant || rice.name}` // Pre-populate with selected variant
   });
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -87,7 +90,7 @@ function EnquiryModal({ rice, onClose }) {
       [name]: value
     }));
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
@@ -95,9 +98,9 @@ function EnquiryModal({ rice, onClose }) {
     alert("Enquiry submitted successfully!");
     onClose();
   };
-  
+
   return (
-    <div className="basmati-modal-overlay">
+    <div className="basmati-modal-overlay" data-aos="fade-in">
       <div className="basmati-modal-content">
         <button 
           onClick={onClose}
@@ -105,11 +108,11 @@ function EnquiryModal({ rice, onClose }) {
         >
           ✕
         </button>
-        
+
         <h2 className="basmati-modal-title">
           Enquire About {rice.selectedVariant || rice.name}
         </h2>
-        
+
         <form onSubmit={handleSubmit} className="basmati-enquiry-form">
           <div className="basmati-form-group">
             <label className="basmati-form-label">Full Name</label>
@@ -122,7 +125,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="basmati-form-group">
             <label className="basmati-form-label">Email Address</label>
             <input
@@ -134,7 +137,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="basmati-form-group">
             <label className="basmati-form-label">Phone Number</label>
             <input
@@ -146,7 +149,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="basmati-form-group">
             <label className="basmati-form-label">Message</label>
             <textarea
@@ -158,7 +161,7 @@ function EnquiryModal({ rice, onClose }) {
               placeholder="Please include quantity and other requirements"
             ></textarea>
           </div>
-          
+
           <button 
             type="submit"
             className="basmati-submit-button"
@@ -175,7 +178,16 @@ function EnquiryModal({ rice, onClose }) {
 export default function BasmatiRiceSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRice, setSelectedRice] = useState(null);
-  
+
+  useEffect(() => {
+      AOS.init({
+        duration: 300,     // smooth and fast animation
+        offset: 100,       // animate sooner
+        once: false,        // animation happens only once
+      });
+    }, []);
+   
+
   const handleEnquireClick = (riceType) => {
     setSelectedRice(riceType);
     setIsModalOpen(true);
@@ -184,7 +196,6 @@ export default function BasmatiRiceSection() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-
   // Updated rice data with variants
   const riceTypes = [
     {
@@ -286,7 +297,6 @@ export default function BasmatiRiceSection() {
     }
   ];
 
-  // Custom arrow components
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -299,7 +309,7 @@ export default function BasmatiRiceSection() {
       </div>
     );
   };
-  
+
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -313,7 +323,6 @@ export default function BasmatiRiceSection() {
     );
   };
 
-  // Slider settings
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -344,22 +353,22 @@ export default function BasmatiRiceSection() {
   };
 
   return (
-    <div className="basmati-section">
-      <h1 className="basmati-section-title">Basmati Rice</h1>
-      
+    <div className="basmati-section" style={{ overflowX: 'hidden' }}>
+      <h1 className="basmati-section-title" data-aos="fade-up">Basmati Rice</h1>
+
       <div className="basmati-slider-container">
         <Slider {...sliderSettings}>
-          {riceTypes.map((rice) => (
-            <RiceCard 
-              key={rice.id}
-              rice={rice}
-              onEnquire={handleEnquireClick}
-            />
+          {riceTypes.map((rice, index) => (
+            <div key={rice.id} data-aos="zoom-in" data-aos-delay={index * 100}>
+              <RiceCard 
+                rice={rice} 
+                onEnquire={handleEnquireClick} 
+              />
+            </div>
           ))}
         </Slider>
       </div>
-      
-      {/* Enquiry Modal */}
+
       {isModalOpen && (
         <EnquiryModal 
           rice={selectedRice} 

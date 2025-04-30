@@ -7,6 +7,12 @@
     background-repeat: no-repeat;
     overflow: hidden;
   }
+  body {
+    overflow-x: hidden;
+  }
+  .rice-brands-wrapper {
+    overflow-x: hidden;
+  }
   
   .rice-brands-container {
     width: 80%;

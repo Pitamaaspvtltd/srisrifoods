@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -8,10 +10,7 @@ import './private.css';
 const NextArrow = (props) => {
   const { onClick } = props;
   return (
-    <div 
-      className="custom-arrow next-arrow" 
-      onClick={onClick}
-    >
+    <div className="custom-arrow next-arrow" onClick={onClick}>
       <i className="fa-solid fa-arrow-right"></i>
     </div>
   );
@@ -20,17 +19,21 @@ const NextArrow = (props) => {
 const PrevArrow = (props) => {
   const { onClick } = props;
   return (
-    <div 
-      className="custom-arrow prev-arrow" 
-      onClick={onClick}
-    >
+    <div className="custom-arrow prev-arrow" onClick={onClick}>
       <i className="fa-solid fa-arrow-left"></i>
     </div>
   );
 };
 
 export default function PrivateLabeling() {
-  // Slider settings
+   useEffect(() => {
+       AOS.init({
+         duration: 300,     // smooth and fast animation
+         offset: 100,       // animate sooner
+         once: false,        // animation happens only once
+       });
+     }, []);
+    
   const settings = {
     dots: false,
     infinite: true,
@@ -60,7 +63,6 @@ export default function PrivateLabeling() {
     ]
   };
 
-  // Product data
   const products = [
     {
       id: 1,
@@ -82,11 +84,6 @@ export default function PrivateLabeling() {
       image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917490/Non_Woven_Bag_oie1sz.png",
       title: "Non-Woven"
     },
-    // {
-    //   id: 5,
-    //   image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917604/basmati_pouch_gwtkuo.png",
-    //   title: "Pouch"
-    // },
     {
       id: 5,
       image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917601/fb_lkkhjy.png",
@@ -96,20 +93,23 @@ export default function PrivateLabeling() {
 
   return (
     <section className="private-labeling-section">
-      <h2 className="private-labeling-heading">Private Labeling</h2>
-      <p className="private-labeling-subheading">
+      <h2 className="private-labeling-heading" data-aos="fade-up">
+        Private Labeling
+      </h2>
+
+      <p className="private-labeling-subheading" data-aos="fade-up" data-aos-delay="100">
         We also offer customized private labeling solutions across a wide range of packaging formats, including
         Non-Woven, Jute, Pouch, BOPP and PP materials
       </p>
-      
-      <div className="slider-container">
+
+      <div className="slider-container" data-aos="fade-up" data-aos-delay="200">
         <Slider {...settings}>
-          {products.map(product => (
-            <div key={product.id} className="slide-item">
-              <img 
-                src={product.image} 
-                alt={product.title} 
-                className="product-image" 
+          {products.map((product, index) => (
+            <div key={product.id} className="slide-item" data-aos="zoom-in" data-aos-delay={index * 100}>
+              <img
+                src={product.image}
+                alt={product.title}
+                className="product-image"
               />
               <h3 className="product-title">{product.title}</h3>
             </div>
@@ -117,13 +117,15 @@ export default function PrivateLabeling() {
         </Slider>
       </div>
 
-      <div className="infra">
+      <div className="infra" data-aos="fade-up" data-aos-delay="300">
         <div className="infratext">
-            <div className="infrahead">
-                <h2>Infrastructure </h2>
-            </div>
-        <div className="infrapara"> Our state-of-the-art processing units are equipped with advanced 
-        technology to ensure precision, hygiene and consistency in every grain.</div>
+          <div className="infrahead">
+            <h2>Infrastructure</h2>
+          </div>
+          <div className="infrapara">
+            Our state-of-the-art processing units are equipped with advanced
+            technology to ensure precision, hygiene and consistency in every grain.
+          </div>
         </div>
       </div>
     </section>

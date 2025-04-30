@@ -1,35 +1,35 @@
 // NonBasmatiRiceSection.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome
 import './nosbasmati.css';
 
 // Rice Card Component
 function NonbasRiceCard({ rice, onEnquire }) {
-    return (
-      <div className="nonbasmati-card">
-        <div className="nonbasmati-image-container">
-          <img
-            src={rice.mainImage}
-            alt={rice.name}
-            className="nonbasmati-main-image"
-          />
-        </div>
-  
-        <h3 className="nonbasmati-title">{rice.name}</h3>
-  
-        <button
-          className="nonbasmati-enquire-button"
-          onClick={() => onEnquire({ ...rice, selectedVariant: rice.name })}
-        >
-          ENQUIRE NOW
-        </button>
+  return (
+    <div className="nonbasmati-card" data-aos="zoom-in">
+      <div className="nonbasmati-image-container">
+        <img
+          src={rice.mainImage}
+          alt={rice.name}
+          className="nonbasmati-main-image"
+        />
       </div>
-    );
-  }
-  
+
+      <h3 className="nonbasmati-title">{rice.name}</h3>
+
+      <button
+        className="nonbasmati-enquire-button"
+        onClick={() => onEnquire({ ...rice, selectedVariant: rice.name })}
+      >
+        ENQUIRE NOW
+      </button>
+    </div>
+  );
+}
 
 // Enquiry Modal Component
 function EnquiryModal({ rice, onClose }) {
@@ -37,39 +37,35 @@ function EnquiryModal({ rice, onClose }) {
     name: '',
     email: '',
     phone: '',
-    message: `I'm interested in ${rice.selectedVariant || rice.name}` // Pre-populate with selected variant
+    message: `I'm interested in ${rice.selectedVariant || rice.name}`
   });
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevData => ({
+    setFormData((prevData) => ({
       ...prevData,
       [name]: value
     }));
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log("Form submitted:", formData);
-    alert("Enquiry submitted successfully!");
+    console.log('Form submitted:', formData);
+    alert('Enquiry submitted successfully!');
     onClose();
   };
-  
+
   return (
     <div className="nonbasmati-modal-overlay">
       <div className="nonbasmati-modal-content">
-        <button 
-          onClick={onClose}
-          className="nonbasmati-close-button"
-        >
+        <button onClick={onClose} className="nonbasmati-close-button">
           ✕
         </button>
-        
+
         <h2 className="nonbasmati-modal-title">
           Enquire About {rice.selectedVariant || rice.name}
         </h2>
-        
+
         <form onSubmit={handleSubmit} className="nonbasmati-enquiry-form">
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Full Name</label>
@@ -82,7 +78,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Email Address</label>
             <input
@@ -94,7 +90,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Phone Number</label>
             <input
@@ -106,7 +102,7 @@ function EnquiryModal({ rice, onClose }) {
               required
             />
           </div>
-          
+
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Message</label>
             <textarea
@@ -118,11 +114,8 @@ function EnquiryModal({ rice, onClose }) {
               placeholder="Please include quantity and other requirements"
             ></textarea>
           </div>
-          
-          <button 
-            type="submit"
-            className="nonbasmati-submit-button"
-          >
+
+          <button type="submit" className="nonbasmati-submit-button">
             Submit Enquiry
           </button>
         </form>
@@ -135,7 +128,16 @@ function EnquiryModal({ rice, onClose }) {
 export default function NonBasmatiRiceSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRice, setSelectedRice] = useState(null);
+
+ useEffect(() => {
+     AOS.init({
+       duration: 300,     // smooth and fast animation
+       offset: 100,       // animate sooner
+       once: false,        // animation happens only once
+     });
+   }, []);
   
+
   const handleEnquireClick = (riceType) => {
     setSelectedRice(riceType);
     setIsModalOpen(true);
@@ -145,34 +147,29 @@ export default function NonBasmatiRiceSection() {
     setIsModalOpen(false);
   };
 
-  // Non-basmati rice data with variants
   const riceTypes = [
     {
       id: 1,
-      name: "PR 11/14 RICE", // Default/main name
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917144/pr11_ivvawa.jpg",
-     
+      name: 'PR 11/14 RICE',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917144/pr11_ivvawa.jpg'
     },
     {
       id: 2,
-      name: "IR-64 PARBOILED RICE",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+      name: 'IR-64 PARBOILED RICE',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg'
     },
     {
       id: 3,
-      name: " SONA MASOORI RICE",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917262/sona_cyegzv.png",
-     
+      name: 'SONA MASOORI RICE',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917262/sona_cyegzv.png'
     },
     {
       id: 4,
-      name: "JEERAKASALA RICE",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917260/jeerakala_fc2hcs.jpg",
-     
+      name: 'JEERAKASALA RICE',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917260/jeerakala_fc2hcs.jpg'
     }
   ];
 
-  // Custom arrow components
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -185,7 +182,7 @@ export default function NonBasmatiRiceSection() {
       </div>
     );
   };
-  
+
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
@@ -199,7 +196,6 @@ export default function NonBasmatiRiceSection() {
     );
   };
 
-  // Slider settings
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -216,7 +212,7 @@ export default function NonBasmatiRiceSection() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -230,28 +226,20 @@ export default function NonBasmatiRiceSection() {
   };
 
   return (
-    <div className="nonbasmati-section">
-      <h2 className="nonbasmati-section-title">Non-Basmati  Rice</h2>
-      
+    <div className="nonbasmati-section" style={{ overflowX: 'hidden' }}>
+      <h2 className="nonbasmati-section-title" data-aos="fade-up">
+        Non-Basmati Rice
+      </h2>
+
       <div className="nonbasmati-slider-container">
         <Slider {...sliderSettings}>
           {riceTypes.map((rice) => (
-            <NonbasRiceCard 
-              key={rice.id}
-              rice={rice}
-              onEnquire={handleEnquireClick}
-            />
+            <NonbasRiceCard key={rice.id} rice={rice} onEnquire={handleEnquireClick} />
           ))}
         </Slider>
       </div>
-      
-      {/* Enquiry Modal */}
-      {isModalOpen && (
-        <EnquiryModal 
-          rice={selectedRice} 
-          onClose={closeModal} 
-        />
-      )}
+
+      {isModalOpen && <EnquiryModal rice={selectedRice} onClose={closeModal} />}
     </div>
   );
 }

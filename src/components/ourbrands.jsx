@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './ourbands.css';
 
 import 'slick-carousel/slick/slick.css';
@@ -36,6 +38,14 @@ const RiceBrandsSlider = () => {
     { id: 3, name: 'Eid Chand XXXL Classic', image: b3, alt: 'Eid Chand Basmati Rice' }
   ];
 
+  useEffect(() => {
+      AOS.init({
+        duration: 300,     // smooth and fast animation
+        offset: 100,       // animate sooner
+        once: false,        // animation happens only once
+      });
+    }, []);
+   
   const settings = {
     dots: false,
     infinite: true,
@@ -65,11 +75,11 @@ const RiceBrandsSlider = () => {
   return (
     <div className="rice-brands-wrapper">
       <div className="rice-brands-container">
-        <h2 className="rice-section-heading">Our Brands</h2>
+        <h2 className="rice-section-heading" data-aos="fade-up">Our Brands</h2>
 
         <Slider {...settings}>
           {brands.map((brand) => (
-            <div key={brand.id} className="rice-carousel-item">
+            <div key={brand.id} className="rice-carousel-item" data-aos="zoom-in">
               <div className="rice-product-card">
                 <img src={brand.image} alt={brand.alt} className="rice-product-image" />
               </div>
