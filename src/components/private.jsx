@@ -82,13 +82,13 @@ export default function PrivateLabeling() {
       image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917490/Non_Woven_Bag_oie1sz.png",
       title: "Non-Woven"
     },
+    // {
+    //   id: 5,
+    //   image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917604/basmati_pouch_gwtkuo.png",
+    //   title: "Pouch"
+    // },
     {
       id: 5,
-      image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917604/basmati_pouch_gwtkuo.png",
-      title: "Pouch"
-    },
-    {
-      id: 6,
       image: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917601/fb_lkkhjy.png",
       title: "BOPP"
     }

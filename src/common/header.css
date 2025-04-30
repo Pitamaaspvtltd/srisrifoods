@@ -70,6 +70,7 @@
     color: #6b3a00;
     text-decoration: none;
     font-size: 1.10vw;
+    text-transform: uppercase;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
