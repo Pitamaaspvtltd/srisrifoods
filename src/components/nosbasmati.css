@@ -1,0 +1,383 @@
+/* NonBasmatiRice.css */
+
+/* Main section styling */
+.nonbasmati-section {
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f8f4e9; /* Same background color as Basmati */
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Section title */
+  .nonbasmati-section-title {
+    font-size: 42px;
+    color: #4a2f1d; /* Same color as Basmati */
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .nonbasmati-section-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #b38a58; /* Same accent color as Basmati */
+    margin: 15px auto 0;
+  }
+  
+  /* Slider container */
+  .nonbasmati-slider-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 85%;
+  }
+  
+  .slick-list{
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Override slick slider dots */
+  .slick-dots li button:before {
+    color: #7a5c3a; /* Same color as Basmati */
+    font-size: 12px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #4a2f1d; /* Same color as Basmati */
+  }
+  
+  /* Override slick arrow styles */
+  .slick-prev, 
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+  }
+  
+  .slick-prev {
+    left: -10px;
+  }
+  
+  .slick-next {
+    right: -10px;
+  }
+  
+  .slick-prev:before, 
+  .slick-next:before {
+    font-size: 40px;
+    color: #7a5c3a; /* Same color as Basmati */
+    opacity: 0.75;
+  }
+  
+  .slick-prev:hover:before, 
+  .slick-next:hover:before {
+    color: #4a2f1d; /* Same color as Basmati */
+    opacity: 1;
+  }
+  
+  /* Rice card styling */
+  .nonbasmati-card {
+    margin: 0 15px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nonbasmati-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  /* Image container styling */
+  .nonbasmati-image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid #7a5c3a; /* Same color as Basmati */
+  }
+  
+  .nonbasmati-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Thumbnails row styling */
+  .nonbasmati-thumbnails-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 0 5px;
+  }
+  
+  .nonbasmati-thumbnail-wrapper {
+    flex: 1;
+    height: 100px;
+    max-width: 100px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 2px solid #e0d5c0; /* Same color as Basmati */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nonbasmati-thumbnail-wrapper:hover, .nonbasmati-thumbnail-active {
+    border-color: #7a5c3a; /* Same color as Basmati */
+    transform: scale(1.05);
+  }
+  
+  .nonbasmati-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Rice title styling */
+  .nonbasmati-title {
+    font-size: 26px;
+    font-family: 'popins';
+    color: #4a2f1d; /* Same color as Basmati */
+    text-align: center;
+    font-weight: 600;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+  }
+  
+  /* Enquire button */
+  .nonbasmati-enquire-button {
+    background-color: #7a5c3a; /* Same color as Basmati */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+  }
+  
+  .nonbasmati-enquire-button:hover {
+    background-color: #4a2f1d; /* Same color as Basmati */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal styling */
+  .nonbasmati-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .nonbasmati-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-top: 4px solid #7a5c3a; /* Same color as Basmati */
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .nonbasmati-close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nonbasmati-close-button:hover {
+    color: #333;
+  }
+  
+  .nonbasmati-modal-title {
+    font-size: 24px;
+    color: #4a2f1d; /* Same color as Basmati */
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* Form styling */
+  .nonbasmati-enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .nonbasmati-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .nonbasmati-form-label {
+    font-size: 14px;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  .nonbasmati-form-input,
+  .nonbasmati-form-textarea {
+    padding: 10px 12px;
+    border: 1px solid #d0c8b5; /* Same color as Basmati */
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 95%;
+  }
+  
+  .nonbasmati-form-input:focus,
+  .nonbasmati-form-textarea:focus {
+    outline: none;
+    border-color: #7a5c3a; /* Same color as Basmati */
+    box-shadow: 0 0 0 2px rgba(122, 92, 58, 0.2); /* Same color as Basmati */
+  }
+  
+  .nonbasmati-form-textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .nonbasmati-submit-button {
+    background-color: #7a5c3a; /* Same color as Basmati */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .nonbasmati-submit-button:hover {
+    background-color: #4a2f1d; /* Same color as Basmati */
+  }
+  
+  /* Custom arrow styles */
+  .nonbasmati-custom-arrow {
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .nonbasmati-custom-arrow i {
+    color: #7a5c3a; /* Same color as Basmati */
+    font-size: 50px;
+  }
+  
+  /* Hide default slick arrows */
+  .slick-prev::before,
+  .slick-next::before {
+    display: none !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .nonbasmati-section-title {
+      font-size: 36px;
+    }
+    
+    .nonbasmati-card {
+      height: 450px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nonbasmati-section-title {
+      font-size: 32px;
+    }
+    
+    .nonbasmati-card {
+      height: 420px;
+    }
+    
+    .nonbasmati-title {
+      font-size: 20px;
+    }
+    
+    .slick-prev {
+      left: -5px;
+    }
+    
+    .slick-next {
+      right: -5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nonbasmati-section-title {
+      font-size: 28px;
+    }
+    
+    .nonbasmati-card {
+      height: 400px;
+    }
+    
+    .nonbasmati-image-container {
+      height: 200px;
+    }
+    
+    .nonbasmati-thumbnails-row {
+      gap: 6px;
+    }
+    
+    .nonbasmati-thumbnail-wrapper {
+      height: 40px;
+      max-width: 60px;
+    }
+    
+    .nonbasmati-modal-content {
+      padding: 20px;
+    }
+  }

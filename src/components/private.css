@@ -1,0 +1,132 @@
+/* PrivateLabeling.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.private-labeling-section {
+  background-color: #8b7355;
+  padding: 20px  0 0 0px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.private-labeling-heading {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.private-labeling-subheading {
+  font-size: 1.2rem;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.slider-container {
+    width: 90%;
+  margin: 0 auto;
+}
+
+.slide-item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-image {
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Custom arrow styles */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  /* width: 50px;
+  height: 50px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  transition: all 0.3s ease;
+}
+
+/* .custom-arrow:hover {
+  background-color: white;
+} */
+
+.next-arrow {
+  right: 10px;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+.infra{
+    background-image: url(../assets/07.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 20%; */
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+.infratext{position: absolute;
+    right: 5%;
+    top: 20%;
+    /* top: 50%; */
+    /* z-index: 9999; */
+    width: 50%;
+}
+.infrahead{
+    font-size: 50px;
+    font-family: 'popins';
+    margin: 0;
+}
+.infrahead h2{
+    margin: 0;
+}
+.infrapara{
+    font-size: 23px;
+    font-family: 'popins';
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .private-labeling-heading {
+    font-size: 2.5rem;
+  }
+  
+  .private-labeling-subheading {
+    font-size: 1rem;
+  }
+  
+  .custom-arrow {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .private-labeling-heading {
+    font-size: 2rem;
+  }
+  
+  .private-labeling-subheading {
+    font-size: 0.9rem;
+  }
+}

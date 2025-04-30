@@ -1,0 +1,396 @@
+/* BasmatiRice.css */
+
+/* Main section styling */
+.basmati-section {
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f8f4e9;
+  font-family: 'Georgia', serif;
+}
+
+/* Section title */
+.basmati-section-title {
+  font-size: 42px;
+  color: #4a2f1d;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.basmati-section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #b38a58;
+  margin: 15px auto 0;
+}
+
+/* Slider container */
+.basmati-slider-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 85%;
+
+}
+.slick-list{
+  width: 90%;
+    margin: auto;
+}
+
+/* Override slick slider dots */
+.slick-dots li button:before {
+  color: #7a5c3a;
+  font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4a2f1d;
+}
+
+/* Override slick arrow styles */
+.slick-prev, 
+.slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: -10px;
+}
+
+.slick-next {
+  right: -10px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+  font-size: 40px;
+  color: #7a5c3a;
+  opacity: 0.75;
+}
+
+.slick-prev:hover:before, 
+.slick-next:hover:before {
+  color: #4a2f1d;
+  opacity: 1;
+}
+
+/* Rice card styling */
+.basmati-card {
+  margin: 0 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 480px; Increased height to accommodate thumbnails */
+}
+
+.basmati-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Image container styling */
+.basmati-image-container {
+  position: relative;
+  width: 100%; /* Main image at 80% width */
+  height: 300px;
+  margin: 0 auto 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #7a5c3a;
+}
+
+.basmati-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* .basmati-image-container:hover .basmati-main-image {
+  transform: scale(1.05);
+} */
+
+/* Thumbnails row styling */
+.basmati-thumbnails-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%; /* Full width for thumbnail row */
+  padding: 0 5px;
+}
+
+.basmati-thumbnail-wrapper {
+  flex: 1;
+  height: 100px;
+  max-width: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 2px solid #e0d5c0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.basmati-thumbnail-wrapper:hover, .basmati-thumbnail-active {
+  border-color: #7a5c3a;
+  transform: scale(1.05);
+}
+
+.basmati-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Rice title styling */
+.basmati-title {
+  font-size: 26px;
+  font-family: 'popins';
+  color: #4a2f1d;
+  /* margin-bottom: 15px; */
+  text-align: center;
+  font-weight: 600;
+margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+/* Enquire button */
+.basmati-enquire-button {
+  background-color: #7a5c3a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.basmati-enquire-button:hover {
+  background-color: #4a2f1d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal styling */
+.basmati-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.basmati-modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-top: 4px solid #7a5c3a;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.basmati-close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.basmati-close-button:hover {
+  color: #333;
+}
+
+.basmati-modal-title {
+  font-size: 24px;
+  color: #4a2f1d;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Form styling */
+.basmati-enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.basmati-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.basmati-form-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.basmati-form-input,
+.basmati-form-textarea {
+  padding: 10px 12px;
+  border: 1px solid #d0c8b5;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 95%;
+}
+
+.basmati-form-input:focus,
+.basmati-form-textarea:focus {
+  outline: none;
+  border-color: #7a5c3a;
+  box-shadow: 0 0 0 2px rgba(122, 92, 58, 0.2);
+}
+
+.basmati-form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.basmati-submit-button {
+  background-color: #7a5c3a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.basmati-submit-button:hover {
+  background-color: #4a2f1d;
+}
+
+/* Custom arrow styles */
+.basmati-custom-arrow {
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #7a5c3a; */
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  opacity: 0.9;
+}
+
+/* .basmati-custom-arrow:hover {
+  background-color: #4a2f1d;
+  transform: scale(1.1);
+  opacity: 1;
+} */
+
+.basmati-custom-arrow i {
+  color: #7a5c3a;
+  font-size: 50px;
+}
+/* Hide default slick arrows */
+.slick-prev::before,
+.slick-next::before {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .basmati-section-title {
+    font-size: 36px;
+  }
+  
+  .basmati-card {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .basmati-section-title {
+    font-size: 32px;
+  }
+  
+  .basmati-card {
+    height: 420px;
+  }
+  
+  .basmati-title {
+    font-size: 20px;
+  }
+  
+  .slick-prev {
+    left: -5px;
+  }
+  
+  .slick-next {
+    right: -5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .basmati-section-title {
+    font-size: 28px;
+  }
+  
+  .basmati-card {
+    height: 400px;
+  }
+  
+  .basmati-image-container {
+    height: 200px;
+  }
+  
+  .basmati-thumbnails-row {
+    gap: 6px;
+  }
+  
+  .basmati-thumbnail-wrapper {
+    height: 40px;
+    max-width: 60px;
+  }
+  
+  .basmati-modal-content {
+    padding: 20px;
+  }
+}

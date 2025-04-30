@@ -1,0 +1,196 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.site-footer {
+  background-image: url('https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921917/09_f99par.png');
+  background-color: #1a0d00;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 60px 20px 20px;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo-section {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  /* width: 40px;
+  height: 40px; */
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+.social-icon img {
+  /* width: 20px;
+  height: 20px; */
+}
+
+.footer-links-section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.quick-links, .product-range {
+  margin-bottom: 30px;
+  min-width: 150px;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  /* margin-bottom: 10px; */
+}
+
+.footer-links-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  
+  transition: color 0.3s ease;
+}
+
+.footer-links-list a:hover {
+  color: #f0d390;
+}
+
+.company-info {
+  margin-bottom: 30px;
+  max-width: 380px;
+}
+
+.company-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.company-address, .company-contact {
+  font-size: 14px;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+.footer-copyright {
+  max-width: 80%;
+  margin: 30px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.created-by {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.created-by a{
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .footer-container,
+  .footer-copyright {
+    max-width: 90%;
+    flex-direction: column;
+  }
+  
+  .footer-logo-section {
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .footer-links-section {
+    flex-wrap: wrap;
+  }
+  
+  .quick-links, .product-range, .company-info {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container,
+  .footer-copyright {
+    max-width: 95%;
+  }
+  
+  .footer-copyright {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .created-by {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-links-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .company-info {
+    grid-column: span 2;
+  }
+}
