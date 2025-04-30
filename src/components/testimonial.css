@@ -13,8 +13,9 @@ width: 80%;
   
   .testimonials-heading {
     text-align: center;
-    font-size: 48px;
-    font-family: 'popinsbold';
+    font-size: 42px;
+    font-family: 'popins';
+    letter-spacing: 2px;
     margin-bottom: 40px;
     font-weight: 600;
     color: white;
@@ -56,6 +57,7 @@ width: 80%;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-family: 'popins';
     max-width: 600px;
   }
   
@@ -72,6 +74,7 @@ width: 80%;
   .testimonial-name {
     font-size: 24px;
     font-weight: 600;
+    font-family: 'popins';
     margin: 0;
   }
   

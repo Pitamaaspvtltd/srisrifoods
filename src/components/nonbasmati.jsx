@@ -231,7 +231,7 @@ export default function NonBasmatiRiceSection() {
 
   return (
     <div className="nonbasmati-section">
-      <h1 className="nonbasmati-section-title">Non-Basmati  Rice</h1>
+      <h2 className="nonbasmati-section-title">Non-Basmati  Rice</h2>
       
       <div className="nonbasmati-slider-container">
         <Slider {...sliderSettings}>

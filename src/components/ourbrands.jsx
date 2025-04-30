@@ -65,7 +65,7 @@ const RiceBrandsSlider = () => {
   return (
     <div className="rice-brands-wrapper">
       <div className="rice-brands-container">
-        <h1 className="rice-section-heading">Our Brands</h1>
+        <h2 className="rice-section-heading">Our Brands</h2>
 
         <Slider {...settings}>
           {brands.map((brand) => (

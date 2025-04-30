@@ -73,10 +73,11 @@
 }
 
 .footer-heading {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
   color: white;
+  font-family: 'popins';
 }
 
 .footer-links-list {
@@ -92,7 +93,7 @@
 .footer-links-list a {
   color: #fff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   
   transition: color 0.3s ease;
 }
@@ -107,11 +108,11 @@
 }
 
 .company-name {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'agency';
   letter-spacing: 1px;
 }
 
