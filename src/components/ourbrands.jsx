@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ourbands.css';
 
@@ -38,14 +37,6 @@ const RiceBrandsSlider = () => {
     { id: 3, name: 'Eid Chand XXXL Classic', image: b3, alt: 'Eid Chand Basmati Rice' }
   ];
 
-  useEffect(() => {
-      AOS.init({
-        duration: 300,     // smooth and fast animation
-        offset: 100,       // animate sooner
-        once: false,        // animation happens only once
-      });
-    }, []);
-   
   const settings = {
     dots: false,
     infinite: true,

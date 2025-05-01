@@ -1,20 +1,11 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
+import React from 'react';
 import 'aos/dist/aos.css';
 import './welcome.css';
 
-import riceBowlImage from '../assets/Rice.png'; 
+import riceBowlImage from '../assets/Rice.png';
 import logo2 from '../assets/Logo_01.png';
 
 const WelcomeSection = () => {
-   useEffect(() => {
-       AOS.init({
-         duration: 300,     // smooth and fast animation
-         offset: 100,       // animate sooner
-         once: false,        // animation happens only once
-       });
-     }, []);
-    
   return (
     <section className="welcome-section">
       <div className="welcome-container">
@@ -39,7 +30,7 @@ const WelcomeSection = () => {
             </p>
           </div>
           
-          <div className="cta-container" >
+          <div className="cta-container">
             <button className="view-more-btn">
               <span>View More</span>
             </button>

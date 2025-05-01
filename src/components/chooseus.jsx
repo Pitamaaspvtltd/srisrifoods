@@ -1,23 +1,12 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import './chooseus.css';
 
 const WhyChooseUs = () => {
-   useEffect(() => {
-       AOS.init({
-         duration: 300,     // smooth and fast animation
-         offset: 100,       // animate sooner
-         once: false,        // animation happens only once
-       });
-     }, []);
-    
-
   return (
     <div className="why-choose-section">
       <div className="why-choose-container">
         <h1 className="why-choose-heading" data-aos="fade-up" data-aos-delay="100">
-          Why Choose us ?
+          Why Choose us?
         </h1>
 
         <div className="why-choose-features">

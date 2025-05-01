@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
 import Slider from 'react-slick';
+import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './private.css';
@@ -26,14 +25,6 @@ const PrevArrow = (props) => {
 };
 
 export default function PrivateLabeling() {
-   useEffect(() => {
-       AOS.init({
-         duration: 300,     // smooth and fast animation
-         offset: 100,       // animate sooner
-         once: false,        // animation happens only once
-       });
-     }, []);
-    
   const settings = {
     dots: false,
     infinite: true,

@@ -12,22 +12,29 @@ import WhyChooseUs from '../components/chooseus';
 import Testimonials from '../components/testimonail';
 
 function Home() {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });   
-    }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 400,
+      once: false, // set to `true` if you only want one-time animations
+      easing: 'ease-in-out',
+    });
 
-    return (
-        <div>
-            <Banner />
-            <WelcomeSection />
-            <RiceBrandsSlider />
-          <BasmatiRiceSection />
-          <NonBasmatiRiceSection />
-          <PrivateLabeling />
-          <WhyChooseUs />
-          <Testimonials />
-        </div>
-    );
+    AOS.refresh(); // Refresh after mount
+  }, []);
+
+  return (
+    <div>
+      <Banner />
+      <WelcomeSection />
+      <RiceBrandsSlider />
+      <BasmatiRiceSection />
+      <NonBasmatiRiceSection />
+      <PrivateLabeling />
+      <WhyChooseUs />
+      <Testimonials />
+    </div>
+  );
 }
 
 export default Home;

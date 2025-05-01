@@ -1,37 +1,25 @@
-// NonBasmatiRiceSection.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
-import AOS from 'aos';
+import emailjs from '@emailjs/browser';
+import { Toaster, toast } from 'react-hot-toast'; // Toaster Import
 import 'aos/dist/aos.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './nosbasmati.css';
 
-// Rice Card Component
 function NonbasRiceCard({ rice, onEnquire }) {
   return (
     <div className="nonbasmati-card" data-aos="zoom-in">
       <div className="nonbasmati-image-container">
-        <img
-          src={rice.mainImage}
-          alt={rice.name}
-          className="nonbasmati-main-image"
-        />
+        <img src={rice.mainImage} alt={rice.name} className="nonbasmati-main-image" />
       </div>
-
       <h3 className="nonbasmati-title">{rice.name}</h3>
-
-      <button
-        className="nonbasmati-enquire-button"
-        onClick={() => onEnquire({ ...rice, selectedVariant: rice.name })}
-      >
+      <button className="nonbasmati-enquire-button" onClick={() => onEnquire({ ...rice, selectedVariant: rice.name })}>
         ENQUIRE NOW
       </button>
     </div>
   );
 }
-
-// Enquiry Modal Component
 function EnquiryModal({ rice, onClose }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -39,84 +27,76 @@ function EnquiryModal({ rice, onClose }) {
     phone: '',
     message: `I'm interested in ${rice.selectedVariant || rice.name}`
   });
+  const [loading, setLoading] = useState(false); // Loader state
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Enquiry submitted successfully!');
-    onClose();
+    setLoading(true);
+
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message
+    };
+
+    emailjs.send(
+      'service_fsfyhdc',
+      'template_nkf0hej',
+      templateParams,
+      'o-TwypZMd-hbWedRE'
+    ).then(
+      (response) => {
+        toast.success('Enquiry submitted successfully!');
+        setLoading(false);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: `I'm interested in ${rice.selectedVariant || rice.name}`
+        });
+        onClose();
+      },
+      (err) => {
+        toast.error('Failed to send enquiry. Please try again later.');
+        setLoading(false);
+      }
+    );
   };
 
   return (
     <div className="nonbasmati-modal-overlay">
       <div className="nonbasmati-modal-content">
-        <button onClick={onClose} className="nonbasmati-close-button">
-          ✕
-        </button>
-
-        <h2 className="nonbasmati-modal-title">
-          Enquire About {rice.selectedVariant || rice.name}
-        </h2>
-
+        <button onClick={onClose} className="nonbasmati-close-button">✕</button>
+        <h2 className="nonbasmati-modal-title">Enquire About {rice.selectedVariant || rice.name}</h2>
         <form onSubmit={handleSubmit} className="nonbasmati-enquiry-form">
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Full Name</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className="nonbasmati-form-input"
-              required
-            />
+            <input type="text" name="name" value={formData.name} onChange={handleChange} className="nonbasmati-form-input" required />
           </div>
-
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Email Address</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className="nonbasmati-form-input"
-              required
-            />
+            <input type="email" name="email" value={formData.email} onChange={handleChange} className="nonbasmati-form-input" required />
           </div>
-
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Phone Number</label>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="nonbasmati-form-input"
-              required
-            />
+            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="nonbasmati-form-input" required />
           </div>
-
           <div className="nonbasmati-form-group">
             <label className="nonbasmati-form-label">Message</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              rows="4"
-              className="nonbasmati-form-textarea"
-              placeholder="Please include quantity and other requirements"
-            ></textarea>
+            <textarea name="message" value={formData.message} onChange={handleChange} rows="4" className="nonbasmati-form-textarea" />
           </div>
-
-          <button type="submit" className="nonbasmati-submit-button">
-            Submit Enquiry
+          <button type="submit" className="nonbasmati-submit-button" disabled={loading}>
+            {loading ? (
+              <span><i className="fa fa-spinner fa-spin" style={{ marginRight: 8 }}></i>Submitting...</span>
+            ) : (
+              'Submit Enquiry'
+            )}
           </button>
         </form>
       </div>
@@ -124,28 +104,17 @@ function EnquiryModal({ rice, onClose }) {
   );
 }
 
-// Main Non-Basmati Rice Section Component
+
 export default function NonBasmatiRiceSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedRice, setSelectedRice] = useState(null);
-
- useEffect(() => {
-     AOS.init({
-       duration: 300,     // smooth and fast animation
-       offset: 100,       // animate sooner
-       once: false,        // animation happens only once
-     });
-   }, []);
-  
 
   const handleEnquireClick = (riceType) => {
     setSelectedRice(riceType);
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const closeModal = () => setIsModalOpen(false);
 
   const riceTypes = [
     {
@@ -173,11 +142,7 @@ export default function NonBasmatiRiceSection() {
   const NextArrow = (props) => {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={`${className} nonbasmati-custom-arrow nonbasmati-next-arrow`}
-        style={{ ...style }}
-        onClick={onClick}
-      >
+      <div className={`${className} nonbasmati-custom-arrow nonbasmati-next-arrow`} style={{ ...style }} onClick={onClick}>
         <i className="fa-solid fa-arrow-right"></i>
       </div>
     );
@@ -186,11 +151,7 @@ export default function NonBasmatiRiceSection() {
   const PrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
-      <div
-        className={`${className} nonbasmati-custom-arrow nonbasmati-prev-arrow`}
-        style={{ ...style }}
-        onClick={onClick}
-      >
+      <div className={`${className} nonbasmati-custom-arrow nonbasmati-prev-arrow`} style={{ ...style }} onClick={onClick}>
         <i className="fa-solid fa-arrow-left"></i>
       </div>
     );
@@ -203,23 +164,19 @@ export default function NonBasmatiRiceSection() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: false,
-    autoplaySpeed: 3000,
-    pauseOnHover: true,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToShow: 2
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 1
         }
       }
     ]
@@ -227,10 +184,8 @@ export default function NonBasmatiRiceSection() {
 
   return (
     <div className="nonbasmati-section" style={{ overflowX: 'hidden' }}>
-      <h2 className="nonbasmati-section-title" data-aos="fade-up">
-        Non-Basmati Rice
-      </h2>
-
+      <Toaster position="top-right" /> {/* Toaster here */}
+      <h2 className="nonbasmati-section-title" data-aos="fade-up">Non-Basmati Rice</h2>
       <div className="nonbasmati-slider-container">
         <Slider {...sliderSettings}>
           {riceTypes.map((rice) => (
@@ -238,7 +193,6 @@ export default function NonBasmatiRiceSection() {
           ))}
         </Slider>
       </div>
-
       {isModalOpen && <EnquiryModal rice={selectedRice} onClose={closeModal} />}
     </div>
   );
