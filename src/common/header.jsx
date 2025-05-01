@@ -1,12 +1,33 @@
 // Header.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import "./header.css";
-import logo from '../assets/Logo.png'; // You'll need to add your logo to this path
+// import logo from 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745923152/Logo_wystlp.png';
+const logo = "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745923152/Logo_wystlp.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Clean up the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -22,7 +43,15 @@ const Header = () => {
   };
 
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+      <div className={`logo-overflow ${scrolled ? 'hidden' : ''}`}>
+        <div className="logo-container-outer">
+          <Link to="/" onClick={closeMenu}>
+            <img src={logo} alt="Sri Sri Foods Logo" className="logo" />
+          </Link>
+        </div>
+      </div>
+      
       <div className="container">
         <div className="logo-container1">
           <Link to="/" onClick={closeMenu}>

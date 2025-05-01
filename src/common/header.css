@@ -1,175 +1,235 @@
 /* Header.css */
 @font-face {
-    font-family: 'agency';
-    src: url('../font/AGENCYB.TTF') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'popins';
-    src: url('../font/Poppins-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'popinsbold';
-    src: url('../font/Poppins-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: 'agency';
+  src: url('../font/AGENCYB.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'popins';
+  src: url('../font/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'popinsbold';
+  src: url('../font/Poppins-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Position relative for the header to allow absolute positioning of logo */
 .header {
-    background-color: white;
-    /* padding: 10px 0; */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-  }
-  
-  .container {
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-  }
-  
-  .logo-container1 {
-    flex: 0 0 auto;
-  }
-      
-  .logo {
-    /* height: 80px; */
-    width: 100%;
-  }
-  
-  .nav-menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 25px ;
-    list-style: none;
-    font-family: 'popins';
-    margin: 0;
-    padding: 0;
-  }
-  
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition: all 0.4s ease;
+  height: 90px; /* Initial larger height */
+}
+
+/* Scrolled state for header */
+.header.scrolled {
+  height: 100px; /* Smaller height when scrolled */
+}
+
+/* Container for the nav elements */
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+/* Logo container that will be visible only when scrolled */
+.logo-container1 {
+  flex: 0 0 auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  visibility: hidden;
+}
+
+/* Make the inside logo visible when scrolled */
+.header.scrolled .logo-container1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Outer logo container that sits outside the header initially */
+.logo-overflow {
+  position: absolute;
+  /* top: -40px; Position it above the header */
+  left: 20%;
+  transform: translateX(-50%);
+  z-index: 101;
+  transition: all 0.4s ease;
+}
+
+/* When scrolled, hide the outer logo */
+.logo-overflow.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo-container-outer {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 180px; /* Larger size for the logo outside */
+  height: auto;
+  transition: all 0.4s ease;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+/* Make the logo inside the header smaller */
+.logo-container1 .logo {
+  width: 96px;
+  height: auto;
+}
+
+.nav-menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-family: 'popins';
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 40px;
+}
+
+.nav-links a {
+  color: #6b3a00;
+  text-decoration: none;
+  font-size: 1.10vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #d4a017;
+}
+
+/* Active link styling */
+.nav-links a.active {
+  color: #d4a017;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #d4a017;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Add a spacer at the top of your content to account for the fixed header */
+
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #6b3a00;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-45deg);
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
   .nav-links li {
-    margin-left: 40px;
+      margin-left: 20px;
   }
   
   .nav-links a {
-    color: #6b3a00;
-    text-decoration: none;
-    font-size: 1.10vw;
-    text-transform: uppercase;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #d4a017;
-  }
-  
-  /* Active link styling */
-  .nav-links a.active {
-    color: #d4a017;
-    /* font-weight: 600; */
-  }
-  
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -5px;
-    left: 0;
-    background-color: #d4a017;
-    transition: width 0.3s ease;
-  }
-  
-  .nav-links a:hover::after,
-  .nav-links a.active::after {
-    width: 100%;
-  }
-  
-  .mobile-menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .hamburger {
-    width: 30px;
-    height: 20px;
-    position: relative;
-  }
-  
-  .hamburger span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #6b3a00;
-    border-radius: 3px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .hamburger span:nth-child(1) {
-    top: 0px;
-  }
-  
-  .hamburger span:nth-child(2) {
-    top: 8px;
-  }
-  
-  .hamburger span:nth-child(3) {
-    top: 16px;
-  }
-  
-  .hamburger.active span:nth-child(1) {
-    top: 8px;
-    transform: rotate(45deg);
-  }
-  
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger.active span:nth-child(3) {
-    top: 8px;
-    transform: rotate(-45deg);
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 992px) {
-    .nav-links li {
-      margin-left: 20px;
-    }
-    
-    .nav-links a {
       font-size: 16px;
-    }
   }
   
-  @media (max-width: 768px) {
-    .mobile-menu-icon {
+  .logo {
+      width: 150px;
+  }
+  
+  .logo-container1 .logo {
+      width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
       display: block;
       z-index: 101;
-    }
-    
-    .nav-menu {
+  }
+  
+  .nav-menu {
       position: fixed;
       top: 0;
       right: -100%;
@@ -180,58 +240,58 @@
       justify-content: center;
       transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-    }
-    
-    .nav-menu.active {
+  }
+  
+  .nav-menu.active {
       right: 0;
-    }
-    
-    .nav-links {
+  }
+  
+  .nav-links {
       flex-direction: column;
       align-items: center;
-    }
-    
-    .nav-links li {
+  }
+  
+  .nav-links li {
       margin: 15px 0;
       opacity: 0;
       transform: translateX(50px);
       transition: all 0.5s ease;
-    }
-    
-    /* Animation for each menu item */
-    .nav-menu.active .nav-links li:nth-child(1) {
+  }
+  
+  /* Animation for each menu item */
+  .nav-menu.active .nav-links li:nth-child(1) {
       animation: slideIn 0.4s ease forwards 0.2s;
-    }
-    
-    .nav-menu.active .nav-links li:nth-child(2) {
+  }
+  
+  .nav-menu.active .nav-links li:nth-child(2) {
       animation: slideIn 0.4s ease forwards 0.3s;
-    }
-    
-    .nav-menu.active .nav-links li:nth-child(3) {
+  }
+  
+  .nav-menu.active .nav-links li:nth-child(3) {
       animation: slideIn 0.4s ease forwards 0.4s;
-    }
-    
-    .nav-menu.active .nav-links li:nth-child(4) {
+  }
+  
+  .nav-menu.active .nav-links li:nth-child(4) {
       animation: slideIn 0.4s ease forwards 0.5s;
-    }
-    
-    .nav-menu.active .nav-links li:nth-child(5) {
+  }
+  
+  .nav-menu.active .nav-links li:nth-child(5) {
       animation: slideIn 0.4s ease forwards 0.6s;
-    }
-    
-    @keyframes slideIn {
+  }
+  
+  @keyframes slideIn {
       0% {
-        opacity: 0;
-        transform: translateX(50px);
+          opacity: 0;
+          transform: translateX(50px);
       }
       100% {
-        opacity: 1;
-        transform: translateX(0);
+          opacity: 1;
+          transform: translateX(0);
       }
-    }
-    
-    /* Add an overlay when menu is active */
-    .nav-menu::before {
+  }
+  
+  /* Add an overlay when menu is active */
+  .nav-menu::before {
       content: '';
       position: fixed;
       top: 0;
@@ -242,20 +302,47 @@
       transition: background-color 0.5s ease;
       pointer-events: none;
       z-index: -1;
-    }
-    
-    .nav-menu.active::before {
-      /* background-color: rgba(0, 0, 0, 0.5); */
-      pointer-events: auto;
-    }
   }
   
-  @media (max-width: 480px) {
-    .logo {
-      height: 60px;
-    }
-    
-    .nav-menu {
-      width: 85%;
-    }
+  .nav-menu.active::before {
+      pointer-events: auto;
   }
+  
+  /* Adjust the logo position for mobile */
+  .logo-overflow {
+      top: -30px;
+  }
+  
+  .logo {
+      width: 140px;
+  }
+  
+  .logo-container1 .logo {
+      width: 90px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo {
+      width: 120px;
+  }
+  
+  .logo-container1 .logo {
+      width: 80px;
+  }
+  
+  .nav-menu {
+      width: 85%;
+  }
+  
+
+  
+  .header {
+      height: 80px;
+  }
+  
+  .header.scrolled {
+      height: 60px;
+  }
+}
