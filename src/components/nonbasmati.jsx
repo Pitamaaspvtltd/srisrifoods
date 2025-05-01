@@ -120,7 +120,7 @@ export default function NonBasmatiRiceSection() {
     {
       id: 1,
       name: 'PR 11/14 RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917144/pr11_ivvawa.jpg'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097314/P.R.-11-Steam-Rice_g9uyb6.jpg'
     },
     {
       id: 2,
@@ -130,12 +130,18 @@ export default function NonBasmatiRiceSection() {
     {
       id: 3,
       name: 'SONA MASOORI RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917262/sona_cyegzv.png'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097363/Sona-Masoori-Steam_ez7nx0.jpg'
     },
     {
       id: 4,
       name: 'JEERAKASALA RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917260/jeerakala_fc2hcs.jpg'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097363/Sona-Masoori-raw_upnecp.jpg'
+    }
+    ,
+    {
+      id: 5,
+      name: 'Sugandha Basmati Rice',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096825/Sugandha-Steam-Rice_k5mlor.jpg'
     }
   ];
 

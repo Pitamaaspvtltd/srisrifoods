@@ -158,17 +158,17 @@ export default function BasmatiRiceSection() {
     {
       id: 1,
       name: "1121 Basmati Rice", // Default/main name
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745903346/1121_cbg5xj.jpg",
+      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Sella-Rice_lsabbh.jpg",
       thumbnails: [
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745903346/1121cream_i9opep.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745903347/1121goldensella_fgevlf.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745903346/1121goldensteam_uaklnj.jpg"
+"https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Sella-Rice_lsabbh.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Golden-Sella_tsf8z0.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095660/1121-Steam-Rice_yx4oh6.jpg"
       ],
       variants: [
         { name: "1121 Basmati Rice" }, // Main variant (index 0)
         { name: "1121 Creamy Basmati" }, // First thumbnail variant
         { name: "1121 Golden Basmati" }, // Second thumbnail variant
-        { name: "1121 Golden Steam Basmati" }   // Third thumbnail variant
+        { name: "1121  Steam Basmati" }   // Third thumbnail variant
       ]
     },
     {
@@ -176,9 +176,9 @@ export default function BasmatiRiceSection() {
       name: "1509 Basmati Rice",
       mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908137/1509_ceteya.jpg",
       thumbnails: [
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908137/1509creamysella_d4clr3.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908138/1509goldensella_puqvex.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908137/1509steam_qrqdsr.jpg"
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096436/1509-Sella-rice_ngyhjf.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096436/1509-Golden-Sella-Rice_fwq3wj.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096436/1509-Steam-Rice_x8vt9q.jpg"
       ],
       variants: [
         { name: "1509 Basmati Rice" },
@@ -190,7 +190,7 @@ export default function BasmatiRiceSection() {
     {
       id: 3,
       name: "1401 Basmati Rice",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908385/1401_zv1b81.jpg",
+      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096510/1401-Steam-Rice_ylqz3f.jpg",
       thumbnails: [
         "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908386/1401cream_musxhv.jpg",
         "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908386/1401golden_rdv0jt.jpg",
@@ -206,10 +206,10 @@ export default function BasmatiRiceSection() {
     {
       id: 4,
       name: "Pusa Basmati Rice",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908572/pusa_ggbenx.png",
+      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096572/Pusa-Sella-Rice_jbcbvv.jpg",
       thumbnails: [
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908572/pusacreamy_hc8e6o.png",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908572/pusagolden_ul58jx.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908572/pusa_ggbenx.png",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096572/Pusa-Golden-sella--Rice_wutqwe.jpg",
         "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908572/pusasteam_mk6utw.jpg"
       ],
       variants: [
@@ -218,32 +218,32 @@ export default function BasmatiRiceSection() {
         { name: "Pusa Golden Sella" },
         { name: "Pusa Steam Basmati" }
       ]
-    }
-    ,
+    },
+    // ,
+    // {
+    //   id: 5,
+    //   name: "Sugandha Basmati Rice",
+    //   mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandha_cqis88.jpg",
+    //   thumbnails: [
+    //     "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandhacream_brf9gu.png",
+    //     "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandha-golden_iqakxj.jpg",
+    //     "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908775/sugandhasteam_mx0mxl.jpg"
+    //   ],
+    //   variants: [
+    //     { name: "Sugandha Basmati Rice" },
+    //     { name: "Sugandha Creamy Sella" },
+    //     { name: "Sugandha Golden Sella" },
+    //     { name: "Sugandha Steam Basmati" }
+    //   ]
+    // },
     {
       id: 5,
-      name: "Sugandha Basmati Rice",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandha_cqis88.jpg",
-      thumbnails: [
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandhacream_brf9gu.png",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908774/sugandha-golden_iqakxj.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745908775/sugandhasteam_mx0mxl.jpg"
-      ],
-      variants: [
-        { name: "Sugandha Basmati Rice" },
-        { name: "Sugandha Creamy Sella" },
-        { name: "Sugandha Golden Sella" },
-        { name: "Sugandha Steam Basmati" }
-      ]
-    },
-    {
-      id: 6,
       name: "Sharbati Basmati Rice",
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745916320/SARBATI_dscjqt.jpg",
+      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097194/Sharbati-Sella-Rice_waifdy.jpg",
       thumbnails: [
         "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745909680/traditional_c9okt5.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745916321/sarbatigolden_uoegfr.jpg",
-        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745916321/sarbatisteam_hg4s36.jpg"
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097194/Sharbati-Golden-Sella-Rice_l9asyu.jpg",
+        "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097194/Sharbati-Steam-Rice_a7cdbn.jpg"
       ],
       variants: [
         { name: "Sharbati  Basmati Rice" },
