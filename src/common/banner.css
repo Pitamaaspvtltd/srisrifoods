@@ -2,8 +2,8 @@
 
 /* === BASE STYLES === */
 .banner-wrapper {
-padding: 21%;
-
+padding: 23%;
+top: 90px;
     position: relative;
     background-size: cover;
     background-position: center;
