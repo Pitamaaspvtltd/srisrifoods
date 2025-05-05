@@ -112,3 +112,17 @@
       margin-bottom: 40px;
     }
   }
+
+  @media (max-width: 575px){
+    .feature-title{
+      font-size: 27px;
+    }
+
+    .feature-description,.worldhead p{
+      font-size: 20px;
+    }
+
+    .worldhead h2{
+      font-size: 36px;
+    }
+  }

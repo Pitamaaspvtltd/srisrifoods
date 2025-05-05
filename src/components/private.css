@@ -97,7 +97,7 @@
     width: 50%;
 }
 .infrahead{
-    font-size: 45px;
+    font-size: 2.344vw;
     font-family: 'popins';
     margin: 0;
     letter-spacing: 3px;
@@ -124,6 +124,16 @@
     width: 40px;
     height: 40px;
   }
+  .infrahead{
+font-size: 3.00vw;
+  }
+}
+
+@media (max-width: 575px){
+  .infra{
+    background-image: url(../assets/inframob.png);
+    height: 100vh;
+  }
 }
 
 @media (max-width: 480px) {
@@ -133,5 +143,26 @@
   
   .private-labeling-subheading {
     font-size: 0.9rem;
+  }
+
+  .infra{
+    background-image: url(../assets/inframob.png);
+    height: 100vh;
+  }
+
+  .infratext{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+  }
+
+  .infrapara{
+    font-size: 20px;
+  }
+
+  .infrahead{
+    font-size: 4.00vw;
   }
 }

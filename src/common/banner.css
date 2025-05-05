@@ -63,22 +63,27 @@ padding: 22%;
   @media screen and (max-width: 768px) {
     .banner-wrapper,
     .banner-container {
-      /* height: 70vh; */
-      padding: 35%; /* Remove padding */
+      height: 50vh;
+      padding: 0;
+      /* padding: 23%; Remove padding */
     }
     .banner-wrapper.multi-image {
         margin-bottom: 4%;
   }
 }
+
+
+
   
   @media screen and (max-width: 480px) {
     .banner-wrapper,
     .banner-container {
-      /* height: 70vh; */
-      padding: 40%; /* Remove padding */
+      height:70vh;
+      padding: 0;
+      /* padding: 40%; Remove padding */
     }
     .banner-wrapper.multi-image {
-        margin-bottom: 1%;
+        margin-bottom: 4%;
   }
 }
   

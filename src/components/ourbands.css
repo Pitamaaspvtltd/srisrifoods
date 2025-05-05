@@ -83,7 +83,7 @@
   .familban{
     padding: 60px 0;
     position: relative;
-    background-image: url('../assets/03.png');
+    background-image: url('../assets/familydesk.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,9 +108,6 @@
   }
   
   @media (max-width: 575px) {
-    .rice-brands-wrapper {
-      padding: 40px 0;
-    }
   
     .rice-section-heading {
       font-size: 26px;
@@ -119,6 +116,18 @@
   
     .rice-brands-container {
       width: 90%;
+    }
+
+    .familban{
+      background-image: url(../assets/familymob.jpg);
+      padding: 50%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .familban{
+      background-image: url(../assets/familymob.jpg);
+      padding: 50%;
     }
   }
   

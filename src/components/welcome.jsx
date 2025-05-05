@@ -10,13 +10,13 @@ const WelcomeSection = () => {
     <section className="welcome-section">
       <div className="welcome-container">
         
-        <div className="image-container" data-aos="fade-right">
+        <div className="image-container" data-aos="fade-up">
           <div className="rice-bowl">
             <img src={riceBowlImage} alt="Bowl of rice with wooden scoop" />
           </div>
         </div>
         
-        <div className="content-container" data-aos="fade-left">
+        <div className="content-container" data-aos="fade-up">
           <h2 className="welcome-heading" data-aos="fade-up">Welcome to</h2>
           
           <div className="logo-container" data-aos="zoom-in" data-aos-delay="200">

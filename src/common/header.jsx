@@ -8,7 +8,24 @@ const logo = "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745923152/Logo
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const location = useLocation();
+
+  // Check if the device is mobile
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    // Check on initial load
+    checkMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Handle scroll event
   useEffect(() => {
@@ -43,14 +60,16 @@ const Header = () => {
   };
 
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-      <div className={`logo-overflow ${scrolled ? 'hidden' : ''}`}>
-        <div className="logo-container-outer">
-          <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="Sri Sri Foods Logo" className="logo" />
-          </Link>
+    <header className={`header ${scrolled ? 'scrolled' : ''} ${isMobile ? 'mobile' : ''}`}>
+      {!isMobile && (
+        <div className={`logo-overflow ${scrolled ? 'hidden' : ''}`}>
+          <div className="logo-container-outer">
+            <Link to="/" onClick={closeMenu}>
+              <img src={logo} alt="Sri Sri Foods Logo" className="logo" />
+            </Link>
+          </div>
         </div>
-      </div>
+      )}
       
       <div className="container">
         <div className="logo-container1">

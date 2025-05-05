@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
         </h1>
 
         <div className="why-choose-features">
-          <div className="feature-item" data-aos="fade-right" data-aos-delay="200">
+          <div className="feature-item" data-aos="fade-up" data-aos-delay="200">
             <div className="feature-icon quality-icon"></div>
             <div className="feature-content">
               <h3 className="feature-title">High Quality</h3>
@@ -20,7 +20,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="feature-item" data-aos="fade-left" data-aos-delay="300">
+          <div className="feature-item" data-aos="fade-up" data-aos-delay="300">
             <div className="feature-icon taste-icon"></div>
             <div className="feature-content">
               <h3 className="feature-title">Taste & Aroma</h3>
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="feature-item" data-aos="fade-right" data-aos-delay="400">
+          <div className="feature-item" data-aos="fade-up" data-aos-delay="400">
             <div className="feature-icon originality-icon"></div>
             <div className="feature-content">
               <h3 className="feature-title">Originality</h3>
@@ -40,7 +40,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="feature-item" data-aos="fade-left" data-aos-delay="500">
+          <div className="feature-item" data-aos="fade-up" data-aos-delay="500">
             <div className="feature-icon rice-icon"></div>
             <div className="feature-content">
               <h3 className="feature-title">Aged Rice</h3>

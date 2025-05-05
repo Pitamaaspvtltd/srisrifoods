@@ -1,6 +1,7 @@
 /* WelcomeSection.css */
 .welcome-section {
     width: 100%;
+    position: relative;
     background-color: #f5f3ef;
     padding: 3% 0;
     margin: 5% 0 0 0;
@@ -152,7 +153,7 @@
     }
     
     .description p {
-      font-size: 0.95rem;
+      font-size: 3.50vw;
       text-align: left;
     }
     
@@ -172,7 +173,7 @@
     }
     
     .description p {
-      font-size: 0.9rem;
+      font-size: 3.00vw;
     }
     
     .view-more-btn {

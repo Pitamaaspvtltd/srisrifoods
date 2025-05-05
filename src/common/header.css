@@ -20,6 +20,9 @@
   font-style: normal;
 }
 
+body{
+  overflow-x: hidden;
+}
 /* Position relative for the header to allow absolute positioning of logo */
 .header {
   background-color: white;
@@ -58,6 +61,12 @@
 
 /* Make the inside logo visible when scrolled */
 .header.scrolled .logo-container1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* In mobile view, the inside logo is always visible */
+.header.mobile .logo-container1 {
   opacity: 1;
   visibility: visible;
 }
@@ -211,7 +220,7 @@
   }
   
   .nav-links a {
-      font-size: 16px;
+      font-size: 20px;
   }
   
   .logo {
@@ -308,41 +317,37 @@
       pointer-events: auto;
   }
   
-  /* Adjust the logo position for mobile */
-  .logo-overflow {
-      top: -30px;
-  }
-  
-  .logo {
-      width: 140px;
-  }
-  
   .logo-container1 .logo {
       width: 90px;
   }
 
+  /* Ensure the logo is always visible in mobile view */
+  .header.mobile .logo-container1 {
+      opacity: 1;
+      visibility: visible;
+  }
+
+  /* No scroll animation for mobile header */
+  .header.mobile.scrolled {
+      height: 100px;
+  }
 }
 
 @media (max-width: 480px) {
-  .logo {
-      width: 120px;
-  }
-  
   .logo-container1 .logo {
-      width: 80px;
+      width: 90px;
   }
   
   .nav-menu {
       width: 85%;
   }
   
-
-  
   .header {
-      height: 80px;
+      height: 100px;
   }
   
-  .header.scrolled {
-      height: 60px;
+  /* No scroll height change for mobile */
+  .header.mobile.scrolled {
+      height: 100px;
   }
 }

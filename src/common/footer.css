@@ -195,3 +195,9 @@
     grid-column: span 2;
   }
 }
+
+@media (max-width: 575px){
+  .footer-links-list a {
+    font-size: 20px;
+  }
+}

@@ -322,6 +322,13 @@
   .slick-next::before {
     display: none !important;
   }
+
+  @media(max-width: 1440px){
+    .nonbasmati-title {
+      font-size: 20px;
+      margin-bottom: 5%;
+    }
+  }
   
   /* Responsive adjustments */
   @media (max-width: 992px) {
@@ -362,7 +369,7 @@
     }
     
     .nonbasmati-card {
-      height: 400px;
+      height: 320px;
     }
     
     .nonbasmati-image-container {
@@ -380,5 +387,14 @@
     
     .nonbasmati-modal-content {
       padding: 20px;
+    }
+
+    .nonbasmati-section{
+      padding: 40px 0px;
+    }
+  
+    .nonbasmati-slider-container{
+      width: 95%;
+      padding: 0;
     }
   }

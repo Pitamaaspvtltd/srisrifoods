@@ -6,7 +6,7 @@ import './banner.css';
 import homeDesktop1 from '../assets/01.png';
 
 // Mobile Backgrounds
-import homeMobile1 from '../assets/01.png';
+import homeMobile1 from '../assets/homemobile1.png';
 
 function Banner() {
     const location = useLocation();
@@ -27,12 +27,15 @@ function Banner() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
+          const mobile = window.innerWidth <= 768;
+          setIsMobile(mobile);
+          console.log("isMobile:", mobile);
         };
+        handleResize(); // Trigger on mount
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
+      }, []);
+      
     useEffect(() => {
         let matchedPath = Object.keys(pageBannerConfigs).find(path =>
             location.pathname === path
