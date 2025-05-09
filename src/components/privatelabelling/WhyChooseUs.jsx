@@ -8,7 +8,7 @@ function WhyChooseUs() {
     <div className="why-choose-us">
       <h3 className="why-title" data-aos="fade-up">Why Choose Us</h3>
       <div className="why-grid">
-        <div className="why-card" data-aos="zoom-in">
+        <div className="why-card" data-aos="fade-up">
           <div className="why-card-content">
             <div className="why-icon-container">
             <i className="fa-solid fa-wheat-awn"></i>
@@ -20,7 +20,7 @@ function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="why-card" data-aos="zoom-in">
+        <div className="why-card" data-aos="fade-up">
           <div className="why-card-content">
             <div className="why-icon-container">
             <i className="fa-solid fa-truck-fast"></i>
@@ -32,7 +32,7 @@ function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="why-card" data-aos="zoom-in">
+        <div className="why-card" data-aos="fade-up">
           <div className="why-card-content">
             <div className="why-icon-container">
             <i className="fa-solid fa-maximize"></i>
@@ -44,7 +44,7 @@ function WhyChooseUs() {
           </div>
         </div>
 
-        <div className="why-card" data-aos="zoom-in">
+        <div className="why-card" data-aos="fade-up">
           <div className="why-card-content">
             <div className="why-icon-container">
             <i className="fa-solid fa-earth-asia"></i>
