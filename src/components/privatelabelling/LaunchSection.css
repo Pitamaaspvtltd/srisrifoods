@@ -1,0 +1,73 @@
+.launch-section {
+    font-family: 'popins';
+    width: 100%;
+    /* background: linear-gradient(to right, #f6d39f, #f9ce9d); amber-100 to green-100 */
+    padding: 2rem 0;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #f5eeda; /* amber-50 */
+  }
+  
+  
+
+  .launch-section .launch-para{
+    margin: auto;
+  }
+  .launch-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #4a2f1d; /* gray-900 */
+  }
+  
+  @media (min-width: 768px) {
+    .launch-title {
+      font-size: 1.875rem;
+    }
+  }
+  
+  .launch-description {
+    color: #695b45; /* gray-700 */
+    margin-bottom: 2rem;
+    max-width: 42rem; /* ~2xl */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .launch-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+  }
+  
+  @media (min-width: 640px) {
+    .launch-buttons {
+      flex-direction: row;
+    }
+  }
+  
+  .btn-primary {
+    font-family: inherit;
+    background-color: rgb(122, 92, 58); /* amber-600 */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .btn-outline {
+    font-family: inherit;
+    background-color: rgb(122, 92, 58);
+    color: #fff; /* amber-700 */
+    border: 2px solid rgb(122, 92, 58); /* amber-600 */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  

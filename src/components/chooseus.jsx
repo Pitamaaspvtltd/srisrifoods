@@ -3,7 +3,20 @@ import './chooseus.css';
 
 const WhyChooseUs = () => {
   return (
+    
     <div className="why-choose-section">
+      
+      <div className="infra" data-aos="fade-up" data-aos-delay="300">
+        <div className="infratext">
+          <div className="infrahead">
+            <h2>Infrastructure</h2>
+          </div>
+          <div className="infrapara">
+            Our state-of-the-art processing units are equipped with advanced
+            technology to ensure precision, hygiene and consistency in every grain.
+          </div>
+        </div>
+      </div>
       <div className="why-choose-container">
         <h1 className="why-choose-heading" data-aos="fade-up" data-aos-delay="100">
           Why Choose us?

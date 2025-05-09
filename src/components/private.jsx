@@ -108,17 +108,6 @@ export default function PrivateLabeling() {
         </Slider>
       </div>
 
-      <div className="infra" data-aos="fade-up" data-aos-delay="300">
-        <div className="infratext">
-          <div className="infrahead">
-            <h2>Infrastructure</h2>
-          </div>
-          <div className="infrapara">
-            Our state-of-the-art processing units are equipped with advanced
-            technology to ensure precision, hygiene and consistency in every grain.
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

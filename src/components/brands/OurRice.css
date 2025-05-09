@@ -1,0 +1,53 @@
+.rice-section {
+  font-family: 'popins';
+    text-align: center;
+    background: #fdf8f1;
+    padding: 20px;
+  }
+  
+  .rice-section h2 {
+    font-size: 2rem;
+    background-color: #3a1d05;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  .rice-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+  }
+  
+  .rice-card {
+    text-align: center;
+  }
+  
+  .rice-card img {
+    width: 70%;
+    height: 75%;
+    border-radius: 50%;
+  }
+  
+  .rice-card p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    /* font-weight: bold; */
+  }
+
+  @media (max-width: 768px) {
+    .rice-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .rice-card p {
+      font-size: 1rem;
+      margin-top: 10px;
+      /* font-weight: bold; */
+    }
+
+    .rice-card img {
+      width: 80%;
+      height: 80%;
+    }
+  }

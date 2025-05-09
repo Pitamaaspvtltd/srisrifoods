@@ -1,0 +1,29 @@
+.rice-branding-container {
+    width: 90%;
+    font-family: 'popins';
+    position: relative;
+    text-align: center;
+    max-width: 768px; /* similar to max-w-3xl */
+    margin: 7rem auto 4rem; /* auto horizontal, 4rem bottom */
+  }
+  
+  .rice-branding-title {
+    font-size: 1.8rem; /* ~text-3xl */
+    font-weight: bold;
+    letter-spacing: -0.02em; /* similar to tracking-tight */
+    margin-bottom: 1rem;
+    color: #4a2f1d;
+  }
+  
+  @media (min-width: 768px) {
+    .rice-branding-title {
+      font-size: 2.2rem; /* ~md:text-4xl */
+    }
+  }
+  
+  .rice-branding-description {
+    font-size: 1.125rem; /* ~text-lg */
+    color: #695b45;
+    margin-bottom: 2rem;
+  }
+  

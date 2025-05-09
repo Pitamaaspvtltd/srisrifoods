@@ -1,0 +1,63 @@
+.brand-section {
+  font-family: 'popins';
+    text-align: center;
+    background: #fdf8f1;
+    padding: 20px;
+    margin-top: 5rem;
+  }
+  
+  .brand-section h2 {
+    font-size: 2rem;
+    background-color: #3a1d05;
+    color: white;
+    padding: 10px 0;
+  }
+
+  
+   .brand-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.brand-card {
+  text-align: center;
+}
+
+.brand-card img {
+  width: 70%;
+  height: auto;
+}
+
+  .brand-name p {
+    margin: 5px 0 2px;
+    font-weight: 500;
+  }
+  
+  .brand-name span {
+    font-size: 0.85rem;
+    font-weight: 300;
+  }
+  .brand-name{
+    background-color: #3a1d05;
+    color: #fff;
+    line-height: 80%;
+    padding: 10px 0;
+  }
+  @media (max-width: 992px) {
+  .brand-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .brand-container {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-card img {
+    width: 60%;
+  }
+}

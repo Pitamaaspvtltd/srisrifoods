@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.premium-food-container {
+  font-family: 'Poppins';
+  position: relative;
+  background-color: #c3ad8d;
+  /* padding: 3rem 1rem; */
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 3% 0;
+}
+.content-wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+.header-section {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.counters-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .counter-box {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8a7557;
+  margin-bottom: 0.5rem;
+}
+
+.counter-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #8a7557;
+}
+
+/* Tablet view (2 columns) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .counters-section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .main-title {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Desktop view (3 columns) */
+  @media (min-width: 1024px) {
+    .counters-section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}

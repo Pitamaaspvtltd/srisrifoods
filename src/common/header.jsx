@@ -117,11 +117,11 @@ const Header = () => {
             </li>
             <li>
               <Link 
-                to="/infrastructure" 
-                className={isActive('/infrastructure') ? 'active' : ''} 
+                to="/private" 
+                className={isActive('/private') ? 'active' : ''} 
                 onClick={closeMenu}
               >
-                Infrastructure
+                Private Labelling
               </Link>
             </li>
             <li>

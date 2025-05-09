@@ -43,8 +43,8 @@ const Footer = () => {
             <ul className="footer-links-list">
               <li><Link to="/" target="_top">Home</Link></li>
               <li><Link to="/about" target="_top">About us</Link></li>
-              <li><Link to="/brand" target="_top">Brand</Link></li>
-              <li><Link to="/infrastructure" target="_top">Infrastructure</Link></li>
+              <li><Link to="/brands" target="_top">Brand</Link></li>
+              <li><Link to="/private" target="_top">Private Labelling</Link></li>
               <li><Link to="/contact" target="_top">Contact</Link></li>
             </ul>
           </div>
@@ -52,8 +52,8 @@ const Footer = () => {
           <div className="product-range">
             <h3 className="footer-heading">Range</h3>
             <ul className="footer-links-list">
-              <li><Link to="/products/basmati" target="_top">Basmati Rice</Link></li>
-              <li><Link to="/products/non-basmati" target="_top">Non Basmati Rice</Link></li>
+              <li><Link to="/brands" target="_top">Basmati Rice</Link></li>
+              <li><Link to="/brands" target="_top">Non Basmati Rice</Link></li>
             </ul>
           </div>
 

@@ -4,9 +4,17 @@ import './banner.css';
 
 // Desktop Backgrounds
 import homeDesktop1 from '../assets/01.png';
+import aboutDesktop from '../assets/aboutban.png'; // Replace with actual file name
 
 // Mobile Backgrounds
 import homeMobile1 from '../assets/homemobile1.png';
+import aboutMobile from '../assets/aboutmob.jpg'; // Replace with actual file name
+
+// Private Backgrounds
+import PrivateLabeling from '../assets/PrivateLabeling.png';
+
+// Brands Backgrounds
+import brandsBanner from '../assets/brandsBanner.png'; // Replace with actual file name
 
 function Banner() {
     const location = useLocation();
@@ -17,6 +25,21 @@ function Banner() {
             desktopBackgrounds: [homeDesktop1],
             mobileBackgrounds: [homeMobile1],
             mobileClass: 'mobile-home'
+        },
+        '/about': {
+            desktopBackgrounds: [aboutDesktop],
+            mobileBackgrounds: [aboutMobile],
+            mobileClass: 'mobile-about'
+        },
+        '/private':{
+            desktopBackgrounds: [PrivateLabeling],
+            mobileBackgrounds: [aboutDesktop],
+            mobileClass: 'mobile-private'
+        },
+        '/brands': {
+            desktopBackgrounds: [brandsBanner],
+            mobileBackgrounds: [aboutDesktop],
+            mobileClass: 'mobile-brands'
         }
     }), []);
 
@@ -27,15 +50,14 @@ function Banner() {
 
     useEffect(() => {
         const handleResize = () => {
-          const mobile = window.innerWidth <= 768;
-          setIsMobile(mobile);
-          console.log("isMobile:", mobile);
+            const mobile = window.innerWidth <= 768;
+            setIsMobile(mobile);
         };
-        handleResize(); // Trigger on mount
+        handleResize(); // Initial call
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-      }, []);
-      
+    }, []);
+
     useEffect(() => {
         let matchedPath = Object.keys(pageBannerConfigs).find(path =>
             location.pathname === path
@@ -62,7 +84,6 @@ function Banner() {
                 backgroundColor: '#eee',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                
             }}
         />
     );
