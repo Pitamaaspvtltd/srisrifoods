@@ -330,7 +330,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-banner {
-    height: 300px;
+    height: 70vh;
     background-image: url('https://res.cloudinary.com/dwfn4hylt/image/upload/v1746512095/ChatGPT_Image_May_6_2025_11_44_38_AM_oby8iz.png');
     background-size: cover;
     background-position: center;
