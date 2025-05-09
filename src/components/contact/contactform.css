@@ -355,7 +355,7 @@
 
 @media (max-width: 480px) {
   .contact-banner {
-    height: 250px;
+    height: 70vh;
   }
   
   .contact-banner h1 {
