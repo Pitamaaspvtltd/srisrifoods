@@ -12,29 +12,30 @@ const Footer = () => {
             alt="Sri Sri Foods Logo" 
             className="footer-logo"
           />
-          <div className="social-icons">
-            <a href="https://facebook.com" className="social-icon facebook" target="_top">
-              <img src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/fb_gwmecn.png" alt="Facebook" />
-            </a>
-            <a href="https://twitter.com" className="social-icon twitter" target="_top">
-              <img 
-                src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/x_oib8ko.png" 
-                alt="X" 
-              />
-            </a>
-            <a href="https://instagram.com" className="social-icon instagram" target="_top">
-              <img 
-                src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/insta_gh9ebp.png" 
-                alt="Instagram" 
-              />
-            </a>
-            <a href="https://youtube.com" className="social-icon youtube" target="_top">
-              <img 
-                src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/youtube_ioo7bb.png" 
-                alt="YouTube" 
-              />
-            </a>
-          </div>
+  <div className="social-icons">
+  <a href="https://facebook.com" className="social-icon facebook" target="_blank" rel="noopener noreferrer">
+    <img src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/fb_gwmecn.png" alt="Facebook" />
+  </a>
+  <a href="https://twitter.com" className="social-icon twitter" target="_blank" rel="noopener noreferrer">
+    <img 
+      src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/x_oib8ko.png" 
+      alt="X" 
+    />
+  </a>
+  <a href="https://instagram.com" className="social-icon instagram" target="_blank" rel="noopener noreferrer">
+    <img 
+      src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/insta_gh9ebp.png" 
+      alt="Instagram" 
+    />
+  </a>
+  <a href="https://youtube.com" className="social-icon youtube" target="_blank" rel="noopener noreferrer">
+    <img 
+      src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/youtube_ioo7bb.png" 
+      alt="YouTube" 
+    />
+  </a>
+</div>
+
         </div>
 
         <div className="footer-links-section">

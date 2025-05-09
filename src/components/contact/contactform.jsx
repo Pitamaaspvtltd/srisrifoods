@@ -188,7 +188,7 @@ const ContactPage = () => {
         <p>Follow us on social media for recipes, updates, and special offers!</p>
         <div className="social-icons1">
         <div className="social-icons">
-  <a href="https://facebook.com/yourpage" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
+  <a href="https://facebook.com/pitamaas" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Facebook">
     <img alt="Facebook" src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/fb_gwmecn.png" />
   </a>
   <a href="https://instagram.com/yourpage" target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="Instagram">

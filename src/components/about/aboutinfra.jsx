@@ -8,14 +8,14 @@ const ManufacturingFacilities = () => {
       className: 'facility-image-large-left',
       alt: 'Rice processing facility with industrial equipment',
       src: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746774405/IMG_9359_2_ygd7xk.jpg',
-      aos: 'fade-right'
+      aos: 'fade-up'
     },
     {
       id: 'facility2',
       className: 'facility-image-small-right',
       alt: 'Food grain storage and processing unit',
       src: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746772647/IMG_9371_1_o2p7o0.jpg',
-      aos: 'fade-left'
+      aos: 'fade-up'
     },
     {
       id: 'facility3',
@@ -29,14 +29,14 @@ const ManufacturingFacilities = () => {
       className: 'facility-image-small-left',
       alt: 'Rice packaging facility with product storage',
       src: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746774405/IMG_9366_1_ndw3c0.jpg',
-      aos: 'fade-up-right'
+      aos: 'fade-up'
     },
     {
       id: 'facility5',
       className: 'facility-image-small-right',
       alt: 'Food grain processing machinery and bagging area',
       src: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746774405/IMG_9367_1_hzum4e.jpg',
-      aos: 'fade-up-left'
+      aos: 'fade-up'
     }
   ];
 

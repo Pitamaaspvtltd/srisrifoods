@@ -8,7 +8,7 @@ export default function WhoWeAreSection() {
     <div className="who-we-are-container" data-aos="fade-up">
       <div className="content-wrapper">
         <div className="top-section">
-          <div className="content-section" data-aos="fade-right">
+          <div className="content-section" data-aos="fade-up">
             <h2 className="section-title">Who We Are</h2>
             <p className="section-text">
               We are a group of young and enthusiastic individuals who have 
@@ -20,7 +20,7 @@ export default function WhoWeAreSection() {
               an up to date global food market database to help you.
             </p>
           </div>
-          <div className="image-section" data-aos="fade-left">
+          <div className="image-section" data-aos="fade-up">
             <img 
               src={ricepics} 
               alt="Bowl of rice with rice plant" 
@@ -37,7 +37,7 @@ export default function WhoWeAreSection() {
           </h2>
 
           <div className="what-we-do-layout">
-            <div className="what-we-do-text" data-aos="fade-right" data-aos-delay="200">
+            <div className="what-we-do-text" data-aos="fade-up" data-aos-delay="200">
               <p>
                 <span className="company-title">Sri Sri Foods</span> focusses on exporting food commodities with immense experience in the food industry. <span className="company-title">Sri Sri Foods</span> is a leading exporter of all kinds of Indian Basmati Rice, Non-Basmati Rice, to a number of destinations around the globe. With several partnerships with buyers across multiple countries, we have grown to be among the go-to companies for food export from India.
               </p>
@@ -46,7 +46,7 @@ export default function WhoWeAreSection() {
               </p>
             </div>
 
-            <div className="what-we-do-image" data-aos="fade-left" data-aos-delay="200">
+            <div className="what-we-do-image" data-aos="fade-up" data-aos-delay="200">
               <img src={grainbag} alt="Grains export" />
             </div>
           </div>
