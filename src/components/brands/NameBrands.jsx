@@ -7,14 +7,14 @@ import b3 from '../../assets/b3.png';
 
 const NameBrands = () => {
   const brands = [
-    { name: "Eid Ka Chand", type: "XX Classic", img: b1 },
-    { name: "Eid Ka Chand", type: "Long Grain", img: b2 },
-    { name: "Sri Sri", type: "XX Premium", img: b3 },
+    { name: "Eid Ka Chand", type: "XXXL Classic", img: b2 },
+    { name: "Eid Ka Chand", type: "Long Grain", img: b1 },
+    { name: "Sri Sri", type: "XXXL Premium", img: b3 },
   ];
 
   return (
     <div className="brand-section">
-      <h2>Our Brand</h2>
+      <h2>Our Brands</h2>
       <div className="brand-container">
         {brands.map((brand, index) => (
           <div className="brand-card" key={index} data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">

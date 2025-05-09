@@ -12,10 +12,10 @@ import aboutMobile from '../assets/aboutmob.jpg'; // Replace with actual file na
 
 // Private Backgrounds
 import PrivateLabeling from '../assets/PrivateLabeling.png';
-
+import privatemob from '../assets/banner2.jpg'
 // Brands Backgrounds
 import brandsBanner from '../assets/brandsBanner.png'; // Replace with actual file name
-
+import brandsmob from '../assets/banner1.jpg';
 function Banner() {
     const location = useLocation();
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -33,12 +33,12 @@ function Banner() {
         },
         '/private':{
             desktopBackgrounds: [PrivateLabeling],
-            mobileBackgrounds: [aboutDesktop],
+            mobileBackgrounds: [privatemob],
             mobileClass: 'mobile-private'
         },
         '/brands': {
             desktopBackgrounds: [brandsBanner],
-            mobileBackgrounds: [aboutDesktop],
+            mobileBackgrounds: [brandsmob],
             mobileClass: 'mobile-brands'
         }
     }), []);

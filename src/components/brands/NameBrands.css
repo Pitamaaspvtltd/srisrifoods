@@ -56,7 +56,9 @@
   .brand-container {
     grid-template-columns: 1fr;
   }
-
+  .brand-section h2{
+    font-size: 26px;
+  }
   .brand-card img {
     width: 60%;
   }

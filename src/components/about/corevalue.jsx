@@ -6,7 +6,7 @@ const CoreValuesSection = () => {
     {
       title: "Quality Conscious",
       description: "It is not our endeavour to make profits by providing low quality food products to our customers. Good Quality has always been on our mind to deliver the best quality food items, our team is constantly doing research to provide freshness intact packaging, developing new methods of storing food items, so that the nutritional values of the same is not lost while in storage.",
-      aos: "fade-right"
+      aos: "fade-up"
     },
     {
       title: "Planned Exports",
@@ -16,7 +16,7 @@ const CoreValuesSection = () => {
     {
       title: "Right in Timely Delivery",
       description: "There is huge demand of Indian food commodities & food Products in Middle East and Other countries because of their taste buds that enjoy the delicious flavors which Indian cuisine brings in. The focus of our food supply is to ensure that the food commodities Food products and ready to eat food items are delivered to the designated destination on right time.",
-      aos: "fade-left"
+      aos: "fade-up"
     }
   ];
 
