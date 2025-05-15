@@ -9,14 +9,10 @@ import Brands from './pages/brands';
 import Contact from './pages/contact';
 import About from './pages/about';
 import Private from './pages/private';
+import Product from './pages/products';
+import Category from './pages/category'
 import ScrollToTop from './common/ScrollToTop';
-// Page components (create these separately)
-// const Home = () => <div className="page-container"><h1>Home Page</h1></div>;
-// const About = () => <div className="page-container"><h1>About US Page</h1></div>;
-// const Brands = () => <div className="page-container"><h1>Brands Page</h1></div>;
-// const Contact = () => <div className="page-container"><h1>Contact Page</h1></div>;
-
-// const Infrastructure = () => <div className="page-container"><h1>Infrastructure Page</h1></div>;
+import RiceDetails from './components/brands/ricedetail'
 
 function App() {
   return (
@@ -30,6 +26,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/brands" element={<Brands />} />
             <Route path="/private" element={<Private />} />
+            <Route path="/product/:category" element={<Product />} />
+            <Route path="/product/:category/:subcategory" element={<Category />} />
+            <Route path="/product/:category/:subcategory/:product-details" element={<RiceDetails />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

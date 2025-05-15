@@ -16,7 +16,7 @@ export default function WhoWeAreSection() {
               trading. We believe that India is known for our Basmati Rice, Non-
               Basmati, other food commodities spices and Food Products export is 
               key to our country's growth. Prioritizing in exporting Indian Basmati & 
-              Nono-Basmati, we are also analysts and researchers who possess 
+              Non-Basmati, we are also analysts and researchers who possess 
               an up to date global food market database to help you.
             </p>
           </div>

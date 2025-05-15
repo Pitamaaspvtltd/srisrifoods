@@ -1,29 +1,26 @@
-/* Header.css */
 @font-face {
   font-family: 'agency';
   src: url('../font/AGENCYB.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'popins';
   src: url('../font/Poppins-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
 }
 
 @font-face {
   font-family: 'popinsbold';
   src: url('../font/Poppins-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'popins';
 }
 
-body{
-  overflow-x: hidden;
-}
-/* Position relative for the header to allow absolute positioning of logo */
 .header {
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -32,56 +29,31 @@ body{
   z-index: 100;
   width: 100%;
   transition: all 0.4s ease;
-  height: 90px; /* Initial larger height */
+  height: 90px;
 }
 
-/* Scrolled state for header */
 .header.scrolled {
-  height: 100px; /* Smaller height when scrolled */
+  height: 100px;
 }
 
-/* Container for the nav elements */
 .container {
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 75%;
   height: 100%;
 }
 
-/* Logo container that will be visible only when scrolled */
-.logo-container1 {
-  flex: 0 0 auto;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  visibility: hidden;
-}
-
-/* Make the inside logo visible when scrolled */
-.header.scrolled .logo-container1 {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* In mobile view, the inside logo is always visible */
-.header.mobile .logo-container1 {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Outer logo container that sits outside the header initially */
 .logo-overflow {
   position: absolute;
-  /* top: -40px; Position it above the header */
   left: 20%;
   transform: translateX(-50%);
   z-index: 101;
   transition: all 0.4s ease;
 }
 
-/* When scrolled, hide the outer logo */
 .logo-overflow.hidden {
   opacity: 0;
   visibility: hidden;
@@ -93,18 +65,28 @@ body{
 }
 
 .logo {
-  width: 180px; /* Larger size for the logo outside */
+  width: 180px;
   height: auto;
-  transition: all 0.4s ease;
   background-color: #fff;
   border-radius: 20px;
   padding: 5%;
+  transition: all 0.4s ease;
 }
 
-/* Make the logo inside the header smaller */
 .logo-container1 .logo {
   width: 96px;
-  height: auto;
+}
+
+.logo-container1 {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.header.scrolled .logo-container1,
+.header.mobile .logo-container1 {
+  opacity: 1;
+  visibility: visible;
 }
 
 .nav-menu {
@@ -115,57 +97,125 @@ body{
 
 .nav-links {
   display: flex;
-  gap: 25px;
   list-style: none;
-  font-family: 'popins';
-  margin: 0;
+  gap: 25px;
   padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
-  margin-left: 40px;
+  position: relative;
 }
 
 .nav-links a {
-  color: #6b3a00;
+  color: #5a3600;
   text-decoration: none;
-  font-size: 1.10vw;
   text-transform: uppercase;
   font-weight: 500;
-  position: relative;
   transition: color 0.3s ease;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #6b3a00;
+    font-size: 1.1vw;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .3s ease;
 }
 
-.nav-links a:hover {
-  color: #d4a017;
-}
-
-/* Active link styling */
+.nav-links a:hover,
 .nav-links a.active {
   color: #d4a017;
 }
 
-.nav-links a::after {
-  content: '';
+.nav-links li i {
+  margin-left: 6px;
+  /* font-size: 10px; */
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover > a > i.fa-chevron-down {
+  transform: rotate(180deg);
+}
+/* This class is added to body during navigation to disable hover effects */
+body.navigating .dropdown:hover > .sub-menu {
+  display: none !important;
+}
+
+/* Ensure submenus are hidden by default */
+.sub-menu {
+  display: none !important;
+}
+
+/* Only show submenus on hover when not navigating */
+body:not(.navigating) .dropdown:hover > .sub-menu {
+  display: block !important;
+}
+.sub-menu {
   position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -5px;
+  top: 100%;
+  padding: 7px;
   left: 0;
-  background-color: #d4a017;
-  transition: width 0.3s ease;
+  color: #5a3600;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 6px 0;
+  min-width: 200px;
+  display: none;
+  width: max-content;
+  font-size: 1.00vw;
+  z-index: 200;
+  max-width: 280px;
+  text-align: left;
 }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
-  width: 100%;
+.dropdown:hover > .sub-menu {
+  display: block;
 }
 
-/* Add a spacer at the top of your content to account for the fixed header */
+.sub-menu li {
+  position: relative;
+  list-style: none;
+  padding: 4px;
+}
 
+.sub-menu a {
+  /* padding: 10px 18px; */
+  /* font-size: 14px; */
+  /* color: #5a3600; */
+  display: flex;
+  padding: 0;
+  font-size: 1.00vw;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  /* width: 100%; */
+  /* gap: 10px; */
+}
+
+
+.sub-menu a:hover {
+  background-color: #fff5d1;
+  color: #c28100;
+}
+
+.sub-menu .dropdown:hover > .sub-menu {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+.sub-menu .dropdown > a > i.fa-chevron-right {
+  float: right;
+}
+
+/* Mobile Menu */
 .mobile-menu-icon {
   display: none;
   cursor: pointer;
+  z-index: 101;
 }
 
 .hamburger {
@@ -181,23 +231,12 @@ body{
   width: 100%;
   background: #6b3a00;
   border-radius: 3px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
-.hamburger span:nth-child(1) {
-  top: 0px;
-}
-
-.hamburger span:nth-child(2) {
-  top: 8px;
-}
-
-.hamburger span:nth-child(3) {
-  top: 16px;
-}
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 8px; }
+.hamburger span:nth-child(3) { top: 16px; }
 
 .hamburger.active span:nth-child(1) {
   top: 8px;
@@ -213,141 +252,53 @@ body{
   transform: rotate(-45deg);
 }
 
-/* Responsive styles */
-@media (max-width: 992px) {
-  .nav-links li {
-      margin-left: 20px;
-  }
-  
-  .nav-links a {
-      font-size: 20px;
-  }
-  
-  .logo {
-      width: 150px;
-  }
-  
-  .logo-container1 .logo {
-      width: 100px;
-  }
-}
-
+/* Responsive */
 @media (max-width: 768px) {
   .mobile-menu-icon {
-      display: block;
-      z-index: 101;
+    display: block;
   }
-  
+
+  .nav-links a{
+    font-size: 4.00vw;
+  }
   .nav-menu {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 70%;
-      height: 100vh;
-      background-color: white;
-      flex-direction: column;
-      justify-content: center;
-      transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    transition: right 0.5s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
   }
-  
+
   .nav-menu.active {
-      right: 0;
+    right: 0;
   }
-  
+
   .nav-links {
-      flex-direction: column;
-      align-items: center;
-  }
-  
-  .nav-links li {
-      margin: 15px 0;
-      opacity: 0;
-      transform: translateX(50px);
-      transition: all 0.5s ease;
-  }
-  
-  /* Animation for each menu item */
-  .nav-menu.active .nav-links li:nth-child(1) {
-      animation: slideIn 0.4s ease forwards 0.2s;
-  }
-  
-  .nav-menu.active .nav-links li:nth-child(2) {
-      animation: slideIn 0.4s ease forwards 0.3s;
-  }
-  
-  .nav-menu.active .nav-links li:nth-child(3) {
-      animation: slideIn 0.4s ease forwards 0.4s;
-  }
-  
-  .nav-menu.active .nav-links li:nth-child(4) {
-      animation: slideIn 0.4s ease forwards 0.5s;
-  }
-  
-  .nav-menu.active .nav-links li:nth-child(5) {
-      animation: slideIn 0.4s ease forwards 0.6s;
-  }
-  
-  @keyframes slideIn {
-      0% {
-          opacity: 0;
-          transform: translateX(50px);
-      }
-      100% {
-          opacity: 1;
-          transform: translateX(0);
-      }
-  }
-  
-  /* Add an overlay when menu is active */
-  .nav-menu::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0);
-      transition: background-color 0.5s ease;
-      pointer-events: none;
-      z-index: -1;
-  }
-  
-  .nav-menu.active::before {
-      pointer-events: auto;
-  }
-  
-  .logo-container1 .logo {
-      width: 90px;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Ensure the logo is always visible in mobile view */
-  .header.mobile .logo-container1 {
-      opacity: 1;
-      visibility: visible;
+  .sub-menu {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    padding-left: 10px;
   }
 
-  /* No scroll animation for mobile header */
-  .header.mobile.scrolled {
-      height: 100px;
+  .dropdown.active > .sub-menu {
+    display: block;
   }
-}
 
-@media (max-width: 480px) {
-  .logo-container1 .logo {
-      width: 90px;
+  .sub-menu .dropdown > a > i {
+    float: right;
   }
-  
-  .nav-menu {
-      width: 85%;
-  }
-  
-  .header {
-      height: 100px;
-  }
-  
-  /* No scroll height change for mobile */
-  .header.mobile.scrolled {
-      height: 100px;
+  .sub-menu {
+    font-size: 3.5vw;
   }
 }

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './contactform.css';
+import tractorVideo from '../../assets/tractor.mp4';
+
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -52,10 +54,12 @@ const ContactPage = () => {
       {/* Banner Section with Video for Desktop and Image for Mobile */}
       <div className="contact-banner">
         {!isMobile ? (
-          <video className="banner-video" autoPlay muted loop playsInline>
-            <source src="https://res.cloudinary.com/dwfn4hylt/video/upload/v1746511924/Standard_Mode_show_the_tractor_and_windmill_mo_1_hqc9zu.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+   <video className="banner-video" autoPlay muted loop playsInline>
+  <source src={tractorVideo} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
         ) : null}
         <div className="banner-overlay">
           <h2>Contact Us</h2>
