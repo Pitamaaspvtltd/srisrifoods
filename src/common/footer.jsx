@@ -53,8 +53,13 @@ const Footer = () => {
           <div className="product-range">
             <h3 className="footer-heading">Range</h3>
             <ul className="footer-links-list">
-              <li><Link to="/brands" target="_top">Basmati Rice</Link></li>
-              <li><Link to="/brands" target="_top">Non Basmati Rice</Link></li>
+              <li><Link to="/product/Indian Basmati Rice" target="_top">Indian Basmati Rice</Link></li>
+              <li><Link to="/product/Indian Non Basmati Rice" target="_top">Indian Non Basmati Rice</Link></li>
+              <li><Link to="/product/Pesticide-Free Rice" target="_top">Pesticide-Free Rice</Link></li>
+
+
+              
+
             </ul>
           </div>
 

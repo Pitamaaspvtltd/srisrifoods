@@ -1,8 +1,16 @@
 import React from 'react';
 import './NameBrands.css';
+
+// Brand images
 import b1 from '../../assets/b1.png';
 import b2 from '../../assets/b2.png';
 import b3 from '../../assets/b3.png';
+
+// Icon images
+import brand1 from '../../assets/brand1.png';
+import brand2 from '../../assets/brand2.png';
+import brand3 from '../../assets/brand3.png';
+import brand4 from '../../assets/brand4.png';
 
 const NameBrands = () => {
   const brands = [
@@ -45,22 +53,22 @@ const NameBrands = () => {
     { 
       title: "Versatile Size Options", 
       description: "Available in 1kg, 5kg, and 20kg sizes, to meet a wide range of consumer needs and wants.",
-      icon: "package-size"
+      icon: brand1
     },
     { 
       title: "Premium 3D Pouches", 
       description: "1 Kg and 5 Kg packs are designed as 3D zip and slider pouches that can be reused for easy everyday use.",
-      icon: "pouch"
+      icon: brand2
     },
     { 
       title: "Crystal-Clear Side Gussets", 
       description: "The side gussets have visibility features and show the quality and shine of the basmati rice.",
-      icon: "visibility"
+      icon: brand3
     },
     { 
       title: "Durable 20kg Carton Packaging", 
-      description: "The pouches are further packed in robust corrugated carton boxes (20kg) to ensure the bags are safeguarded and the rice remains fresh during transit and storage.",
-      icon: "carton"
+      description: "The pouches are further packed in robust corrugated carton boxes (20kg) to ensure the bags are safeguarded.",
+      icon: brand4
     }
   ];
 
@@ -73,6 +81,7 @@ const NameBrands = () => {
             Exceptional quality rice varieties for every occasion
           </p>
         </div>
+
         <div className="product-display">
           {brands.map((brand, index) => (
             <div className="product-card" key={index}>
@@ -94,13 +103,14 @@ const NameBrands = () => {
             </div>
           ))}
         </div>
+
         <div className="packaging-banner">
           <h2>Packaging That Delivers Freshness, Quality, and Convenience in Every Grain</h2>
           <div className="packaging-features">
             {packagingFeatures.map((feature, index) => (
               <div className="packaging-feature" key={index}>
                 <div className="feature-icon1">
-                  <i className={`icon-${feature.icon}`}></i>
+                  <img src={feature.icon} alt={feature.title} className="feature-icon-img" />
                 </div>
                 <div className="feature-content1">
                   <strong>{feature.title}</strong> {feature.description}

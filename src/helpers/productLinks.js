@@ -17,7 +17,7 @@ const productLinks = [
                         The volume expansion in the cooked rice is more than 4.0 times thus it helps in realizing more cooked rice volume with lesser milled rice,
                         a trait most preferred in the household as well as the most preferable hotel industry.`,
                 slug: "1121-basmati Rice",
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747386164/1121Sella-Rice_yc7rnp.png",
                 subitems: [
                     {
                         name: "1121 Raw Basmati",
@@ -42,7 +42,7 @@ const productLinks = [
                             "Usage in Various Cuisines Food"
                         ],
                         slug: "1121-Raw-Basmati",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747386164/1121Sella-Rice_yc7rnp.png",
                     },
                     {
                         name: "1121 Golden Sella Basmati",

@@ -158,7 +158,7 @@ export default function BasmatiRiceSection() {
     {
       id: 1,
       name: "1121 Basmati Rice", // Default/main name
-      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Sella-Rice_lsabbh.jpg",
+      mainImage: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747386164/1121Sella-Rice_yc7rnp.png",
       thumbnails: [
 "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Sella-Rice_lsabbh.jpg",
         "https://res.cloudinary.com/dwfn4hylt/image/upload/v1746095659/1121-Golden-Sella_tsf8z0.jpg",
