@@ -67,8 +67,9 @@ const Footer = () => {
             <h2 className="company-name">SRI SRI FOODS</h2>
             <p className="company-address">2655, Naya Bazar, Delhi -110006</p>
             <p className="company-address">KH. NO. 363/I, VIII, Hamidpur, Delhi -110036</p>
-            <p className="company-contact">Mob.: +91 9625 50 75 43</p>
-            <p className="company-contact">Website : www.srisrifoods.com</p>
+            <p className="company-contact">Mob.: +91 8130388382 ,
++91 9625507543</p>
+            {/* <p className="company-contact">Website : www.srisrifoods.com</p> */}
             <p className="company-contact">E-mail : sales@srisrifoods.com</p>
           </div>
         </div>

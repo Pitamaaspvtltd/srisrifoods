@@ -135,14 +135,14 @@ const ContactPage = () => {
               <i className="icon phone-icon"></i>
               <div>
                 <h3>Phone Number</h3>
-                <p>+1 (555) 123-4567</p>
+                <p> +91 8130388382 , +91 9625507543</p>
               </div>
             </div>
             <div className="info-item">
               <i className="icon email-icon"></i>
               <div>
                 <h3>Email Address</h3>
-                <p>info@srisrifoods.com</p>
+                <p>sales@srisrifoods.com</p>
               </div>
             </div>
             <div className="info-item">
