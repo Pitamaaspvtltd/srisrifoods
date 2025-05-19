@@ -42,7 +42,7 @@ const productLinks = [
                             "Usage in Various Cuisines Food"
                         ],
                         slug: "1121-Raw-Basmati",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747386164/1121Sella-Rice_yc7rnp.png",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629689/1121-Raw-Rice_hy5jfa.jpg",
                     },
                     {
                         name: "1121 Golden Sella Basmati",
@@ -73,7 +73,7 @@ const productLinks = [
                             "Usage in Various Cuisines Food"
                         ],
                         slug: "1121-golden-sella-basmati-rice",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629695/1121-Golden-Sella_tp7mog.jpg",
                     },
                     {
                         name: "1121 Sella Basmati",
@@ -106,7 +106,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629689/1121-Raw-Rice_hy5jfa.jpg",
                     },
 
                     {
@@ -141,7 +141,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629688/1121-Sella-Rice_kscsx3.jpg",
                     }
                 ],
             },
@@ -152,7 +152,7 @@ const productLinks = [
                     1509 Basmati Rice variety has the longest grain, which can go up to 8.5 mm. 1509 rice is cheaper in comparison to 1121 rice variety because 1509 rice's
                     cultivation time is less and produces higher yield as compared to 1121 rice. Upon cooking, 
                     the grains exhibit great elongation, excellent fluffiness, are non-sticky and have a pleasant aroma.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1509-Raw-Rice_aick8u.jpg",
                 subitems: [
                     {
                         name: "1509 Steam Basmati Rice",
@@ -183,7 +183,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1509-Raw-Rice_aick8u.jpg",
                     },
                     {
 
@@ -215,7 +215,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1509-Sella-Rice_gxgmlr.jpg",
                     },
                     {
                         name: "1509 Sella Basmati Rice",
@@ -245,7 +245,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1401-Sella-Rice_qecerl.jpg",
                     },
                     {
                         name: "1509 Golden Sella Basmati Rice",
@@ -273,7 +273,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629690/1509-Golden-Sella_t1hg5h.jpg",
                     }
                 ],
             },
@@ -286,7 +286,7 @@ const productLinks = [
                   the hybrid aromatic basmati rice with an average grain length of 7.3 mm. This variety of rice is relatively newer and hence, much better than others. 
                   Our experts go the extra mile during the production of the 1401 Basmati Rice. 
                 Order it now to taste the newly develop variety of rice, which also ranks among the best, and relish a taste like never before.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629690/1401-Raw_fh7cil.jpg",
                 subitems: [
                     {
                         name: "1401 Steam Basmati Rice",
@@ -314,7 +314,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629690/1401-Raw_fh7cil.jpg",
                     },
                     {
                         name: "1401 Raw Basmati Rice",
@@ -341,7 +341,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1401-Sella-Rice_qecerl.jpg"
                     },
                     {
                         name: "1401 Sella Basmati Rice",
@@ -365,7 +365,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1401-Sella-Rice_qecerl.jpg"
                     },
                     {
                         name: "1401 Golden Sella Basmati Rice",
@@ -389,7 +389,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629695/1401-Golden-Sella_mxhfnw.jpg"
                     },
 
                 ],
@@ -399,7 +399,7 @@ const productLinks = [
                 slug: "Pusa-basmati-rice",
                 desc: `Pusa Raw Basmati Rice is a type of long-grain aromatic rice that is grown in the foothills of the Himalayas in India. It is a popular choice for both everyday meals and special occasions, and is known for its distinct nutty flavor and fluffy, non-sticky texture. Pusa Raw Basmati Rice is a good source of fiber and protein, and is also low in fat. It is a versatile rice that can be used to make a variety of dishes, including biryani, pilaf, pulao, and fried rice. It is also a good choice for risotto and other creamy rice dishes. Here are some of the key characteristics of Pusa Raw Basmati Rice: Long, slender
                        grains Distinct nutty flavor Fluffy, non-sticky texture Good source of fiber and protein Versatile and can be used in a variety of dishes`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/Pusa-Raw-Rice_kjwvxs.jpg",
                 subitems: [
                     {
                         name: "Pusa Raw Basmati Rice",
@@ -430,7 +430,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/Pusa-Raw-Rice_kjwvxs.jpg"
                     },
 
                     {
@@ -459,7 +459,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629697/Pusa-Steam-Rice_m9ybeb.jpg"
                     },
 
                     {
@@ -492,7 +492,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/Pusa-Sella-Rice_xv8rjo.jpg"
                     },
 
                     {
@@ -520,7 +520,7 @@ const productLinks = [
                             "Soft Texture Rice",
                             "Usage in Various Cuisines Food"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629692/Pusa-Golden-Sella_fqwkye.jpg"
                     }
                 ],
             },
@@ -533,12 +533,12 @@ const productLinks = [
                        when cooked. The rice has a distinct nutty aroma and a slightly sweet taste, making it a popular choice for various 
                        dishes, including biryanis, pulao, and fried rice. It is also known for its high nutritional value, being a good source 
                        of carbohydrates and essential nutrients.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629694/Sharbati-Raw_hdqtro.jpg",
                 subitems: [
                     {
                         name: "Sharbati Basmati Raw Rice",
                         slug: "sharbati-basmati-raw-rice",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg", // Replace with actual Sharbati image if available
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629694/Sharbati-Raw_hdqtro.jpg", // Replace with actual Sharbati image if available
                         desc: `Sharbati Raw Rice is a type of long-grain aromatic rice that is grown in the northern Indian states of Punjab and Haryana. It is known for its sweet and nutty flavor, and its soft and fluffy texture. Sharbati Raw Rice is a popular choice for both everyday meals and special occasions.
                                Sharbati Raw Rice is a good source of fiber and protein, and is also low in fat. It is a versatile rice that can be used to make a variety of dishes, including biryani, pilaf, pulao, and fried rice. It is also a good choice for risotto and other creamy rice dishes.
                                **Key Characteristics:**
@@ -569,7 +569,7 @@ const productLinks = [
                     {
                         name: "Sharbati Steam Basmati Rice",
                         slug: "sharbati-steam-basmati-rice",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629694/Sharbati-Steam_k2yqh0.jpg",
                        desc: `Sharbati Steam Basmati Rice is known for its long grains, soft texture, and mild aroma. Grown in North India, it’s perfect for daily meals like steamed rice, pulao, and fried rice.`,
 
 
@@ -597,7 +597,7 @@ const productLinks = [
                     {
                         name: "Sharbati Sella Basmati Rice",
                         slug: "sharbati-sella-basmati-rice",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629691/1509-Sella-Rice_gxgmlr.jpg",
                        desc: `Sharbati Sella Basmati Rice is parboiled for better nutrition and firm texture. With its long grains and mild aroma, it’s perfect for biryani, pulao, and daily meals.`,
                         Specification: [
                             { "Purity": "95.00%" },
@@ -621,7 +621,7 @@ const productLinks = [
                     {
                         name: "Sharbati Golden Sella Basmati Rice",
                         slug: "sharbati-golden-sella-basmati-rice",
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg", // Replace with actual image if available
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629692/Pusa-Golden-Sella_fqwkye.jpg", // Replace with actual image if available
                        desc: `Sharbati Golden Sella Basmati Rice is known for its long grains, golden hue, and mild aroma. Parboiled for better nutrition and texture, this rice stays firm and fluffy when cooked. Grown in North India, it is an affordable and aromatic alternative to traditional Basmati, making it ideal for biryani, pulao, and everyday meals.`,
                         Specification: [
                             { "Purity": "95.00%" },
@@ -659,7 +659,7 @@ const productLinks = [
                 desc: `PR11 Rice is a non-basmati rice variety that is widely cultivated in India, particularly in the states of Punjab and Haryana. It is known for its medium grain size, soft texture, and affordability. PR11 Rice is commonly used in everyday meals and is a staple in many Indian households.
                        PR11 Rice is a popular choice for daily meals, economical export options, and is widely used in traditional Indian dishes such as khichdi, plain rice, and curries.
                        It cooks quickly and evenly, maintaining a soft texture. PR11 Rice is often preferred for its budget-friendly price and versatility in various cuisines.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/PR-11_bxraks.jpg",
                 subitems: [
                     {
                         name: "PR 11 Raw Rice",
@@ -684,7 +684,7 @@ const productLinks = [
                             "Quick Cooking",
                             "Widely Used in Indian Meals"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/PR-11_bxraks.jpg"
                     },
                 ]
             },
@@ -694,7 +694,7 @@ const productLinks = [
                 desc: `PR14 Rice is a non-basmati rice variety that is widely cultivated in India, particularly in the states of Punjab and Haryana. It is known for its medium grain size, soft texture, and affordability. PR14 Rice is commonly used in everyday meals and is a staple in many Indian households.
                        PR14 Rice is a popular choice for daily meals, economical export options, and is widely used in traditional Indian dishes such as khichdi, plain rice, and curries.
                        It cooks quickly and evenly, maintaining a soft texture. PR14 Rice is often preferred for its budget-friendly price and versatility in various cuisines.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/PR-14_ykjr7p.jpg",
                 subitems: [
                     {
                         name: "PR 14 Raw Rice",
@@ -719,7 +719,7 @@ const productLinks = [
                             "Quick Cooking",
                             "Widely Used in Indian Meals"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/PR-14_ykjr7p.jpg"
                     }
                 ]
             },
@@ -728,7 +728,7 @@ const productLinks = [
                 slug: "ir-64-rice",
                 desc: `IR64 Rice is a popular non-basmati rice variety cultivated in India, particularly in the states of Andhra Pradesh and Tamil Nadu. It is known for its medium grain size, soft texture, and affordability. IR64 Rice is commonly used in everyday meals and is a staple in many Indian households.
                        IR64 Rice is a popular choice for daily meals, economical export options, and is widely used in traditional Indian dishes such as khichdi, plain rice, and curries. It cooks quickly and evenly, maintaining a soft texture. IR64 Rice is often preferred for its budget-friendly price and versatility in various cuisines.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/IR-64_ym8lr4.jpg",
                 subitems: [
                     {
                         name: "IR 64 Parboiled Rice",
@@ -753,7 +753,7 @@ const productLinks = [
                             "Quick Cooking",
                             "Widely Used in Indian Meals"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/IR-64_ym8lr4.jpg"
                     }
                 ]
             },
@@ -761,7 +761,7 @@ const productLinks = [
                 name: "Sona Masoori Rice",
                 desc: `Sona Masoori Rice is a popular non-basmati rice variety cultivated in southern India, particularly in the states of Andhra Pradesh and Karnataka. It is known for its medium grain size, soft texture, and aromatic flavor. Sona Masoori Rice is commonly used in everyday meals and is a staple in many Indian households.
                        Sona Masoori Rice is a popular choice for daily meals, economical export options, and is widely used in traditional Indian dishes such as biryani, pulao, and curries. It cooks quickly and evenly, maintaining a soft texture. Sona Masoori Rice is often preferred for its budget-friendly price and versatility in various cuisines.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/Sona-Masoori-Rice_hobbgp.jpg",
                 subitems: [
                     {
                         name: "Sona Masoori Raw Rice",
@@ -794,7 +794,7 @@ const productLinks = [
                 name: "Jeera Kasala Rice",
                 desc: `Jeera Kasala Rice is a non-basmati rice variety cultivated in India, particularly in the states of Maharashtra and Gujarat. It is known for its short to medium grain size, aromatic flavor, and unique cooking properties. Jeera Kasala Rice is commonly used in traditional Indian dishes and is appreciated for its distinct taste.
                           Jeera Kasala Rice is a popular choice for daily meals, economical export options, and is widely used in traditional Indian dishes such as biryani, pulao, and khichdi. It cooks quickly and evenly, maintaining a soft texture. Jeera Kasala Rice is often preferred for its aromatic flavor and versatility in various cuisines.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/jeera-kasala_bxzqot.jpg",
                 subitems: [
                     {
                         name: "Jeera Kasala Raw Rice",
@@ -819,7 +819,7 @@ const productLinks = [
                             "Quick Cooking",
                             "Widely Used in Indian Meals"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/jeera-kasala_bxzqot.jpgg",
                     },
                 ]
             }
@@ -829,7 +829,7 @@ const productLinks = [
         category: "Pesticide-Free Rice",
         desc: `Pesticide-Free Rice is a type of rice that is cultivated without the use of synthetic pesticides or chemical fertilizers.
                 This rice is grown using organic farming practices, which prioritize natural methods of pest control and soil enrichment. Pesticide-free rice is often considered healthier and more environmentally friendly compared to conventionally grown rice. It is available in various varieties, including Basmati and non-basmati types, and is popular among health-conscious consumers.`,
-        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/1121-Steam-Rice_ou1fph.jpg",
         items: [
             {
                 name: "Pesticide Residue Free Steam Rice",
@@ -837,7 +837,7 @@ const productLinks = [
                 desc: `Pesticide Residue Free Steam Rice is a premium variety of rice that is cultivated without the use of synthetic pesticides or chemical fertilizers. This rice is processed using steam before milling, which enhances its flavor and texture while ensuring it is free from harmful residues.
                           Pesticide Residue Free Steam Rice is known for its long grains, aromatic flavor, and fluffy texture when cooked. It is a popular choice for health-conscious consumers and is often used in various culinary applications, including biryanis, pilafs, and steamed rice dishes.
                             This rice is available in both Basmati and non-basmati varieties, making it versatile for different cuisines. It is also appreciated for its nutritional benefits, as it retains essential vitamins and minerals during the steaming process.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/1121-Steam-Rice_ou1fph.jpg",
                 subitems: [
                     {
                         name: "1121 Pesticide Residue Free Steam Rice",
@@ -865,7 +865,7 @@ const productLinks = [
                             "Strong Aroma",
                             "More Cooked Volume from Less Rice"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/1121-Steam-Rice_ou1fph.jpg"
                     },
                     {
                         name: "1509 Pesticide Residue Free Steam Rice",
@@ -891,7 +891,7 @@ const productLinks = [
                             "Nutty Flavor",
                             "Used in Biryani, Pulao, Risotto & More"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629692/1509-Steam-Rice_kn9n9r.jpg"
                     }, {
                         name: "PUSA Basmati Pesticide Residue Free Steam Rice",
                         slug: "pusa-basmati-pesticide-residue-free-steam-rice",
@@ -915,7 +915,7 @@ const productLinks = [
                             "Popular in Indian & International Dishes",
                             "Long, Slender Grains"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629697/Pusa-Steam-Rice_m9ybeb.jpg"
                     }, {
                         name: "Sharbati Pesticide Residue Free Steam Rice",
                         slug: "sharbati-pesticide-residue-free-steam-rice",
@@ -940,7 +940,7 @@ Sharbati rice is known for its pleasant, nutty or floral aroma, making it a popu
                             "Nutrient-Retaining Parboiled Process",
                             "Used in Biryani, Pulao, and Steamed Rice"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629694/Sharbati-Steam_k2yqh0.jpg"
                     }
                 ]
             },
@@ -949,7 +949,7 @@ Sharbati rice is known for its pleasant, nutty or floral aroma, making it a popu
                 slug: "pesticide-residue-free-sella-rice",
                 desc: `Pesticide Residue Free Sella Rice is a premium variety of rice that is cultivated without the use of synthetic pesticides or chemical fertilizers. This rice undergoes a parboiling process (Sella) before milling, which enhances its firmness, aroma, and nutrient retention while ensuring it is free from harmful residues.
 Pesticide Residue Free Sella Rice is known for its long grains, rich aroma, and non-sticky texture when cooked. It is a popular choice for health-conscious consumers and is often used in various culinary applications including biryanis, pulao, and steamed rice dishes. Available in both Basmati and non-Basmati variants, it combines traditional flavor with modern processing for optimal quality.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/Pusa-Sella-Rice_xv8rjo.jpg",
                 subitems: [
                     {
                         name: "1121 Pesticide Residue Free Sella Rice",
@@ -975,7 +975,7 @@ Cultivated primarily in the Indian subcontinent, this rice type is processed thr
                             "Nutty & Floral Aroma",
                             "Ideal for Biryanis and Pulao"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629688/1121-Sella-Rice_kscsx3.jpg"
                     },
                     {
                         name: "1509 Pesticide Residue Free Sella Rice",
@@ -1003,7 +1003,7 @@ Its strong and pleasant aroma—combining nutty and floral notes—adds to its c
                             "Nutty & Floral Aroma",
                             "Used in Biryanis and Pilafs"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629695/1401-Golden-Sella_mxhfnw.jpg"
                     },
                     {
                         name: "PUSA Pesticide Residue Free Sella Rice",
@@ -1030,7 +1030,7 @@ Due to this process, the rice cooks faster—typically within 15–20 minutes—
                             "Nutty & Floral Aroma",
                             "Ideal for Biryanis, Pulao, and Global Dishes"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/Pusa-Sella-Rice_xv8rjo.jpg"
                     },
 
                     {
@@ -1058,7 +1058,7 @@ The 'Sella' parboiling process gives the rice a golden hue and helps retain nutr
                             "Nutty & Floral Aroma",
                             "Used in Various Cuisines Globally"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629693/1121-Steam-Rice_ou1fph.jpg"
                     },
                     {
                         name: "Sharbati Pesticide Residue Free Sella Rice",
@@ -1085,7 +1085,7 @@ The parboiling (Sella) process helps retain essential nutrients and gives the ri
                             "Nutty & Floral Aroma",
                             "Versatile in Indian Cuisine"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629694/Sharbati-Raw_hdqtro.jpg"
                     }
 
 
@@ -1099,7 +1099,7 @@ The parboiling (Sella) process helps retain essential nutrients and gives the ri
                 name: "Pesticide Residue Free Golden Sella Rice",
                 slug: "pesticide-residue-free-golden-sella-rice",
                 desc: `Its 100% safe as its not grown with any chemical or harmful pesticide. The nutrition value is high as compared to conventional rice. Its known and proven fact is golden. It is renowned for superfine kernels, great taste, exquisite aroma, and silky texture. The Sella rice is carefully nurtured to retain its complete nutritional value.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
+                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629695/1121-Golden-Sella_tp7mog.jpg",
                 subitems: [
                     {
                         name: "1121 Pesticide Residue Free Golden Sella Rice",
@@ -1126,7 +1126,7 @@ Its long, slender grains remain separate and fluffy after cooking, making it a t
                             "Nutty, Earthy & Floral Aroma",
                             "Ideal for Biryanis and Pilafs"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629695/1121-Golden-Sella_tp7mog.jpg"
                     },
 
                     {
@@ -1154,7 +1154,7 @@ The parboiling process not only enhances its visual appeal with a golden hue but
                             "Golden Hue from Parboiling",
                             "Ideal for Biryanis and Global Cuisines"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629690/1509-Golden-Sella_t1hg5h.jpg"
                     }
                     ,
                     {
@@ -1182,108 +1182,13 @@ Primarily grown in regions like Uttar Pradesh and Bihar, Sugandha Golden Sella R
                             "Nutty & Floral Aroma",
                             "Perfect for Pulao, Biryani, and Steamed Rice"
                         ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
+                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1747629692/Pusa-Golden-Sella_fqwkye.jpg"
                     }
 
 
 
                 ]
-            },
-            
- {
-                name: "Pesticide Residue Free Golden Sella Rice",
-                slug: "pesticide-residue-free-golden-sella-rice",
-                desc: `Its 100% safe as its not grown with any chemical or harmful pesticide. The nutrition value is high as compared to conventional rice. Its known and proven fact is golden. It is renowned for superfine kernels, great taste, exquisite aroma, and silky texture. The Sella rice is carefully nurtured to retain its complete nutritional value.`,
-                imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg",
-                subitems: [
-                    {
-                        name: "1121 Pesticide Residue Free Golden Sella Rice",
-                        slug: "1121-pesticide-residue-free-golden-sella-rice",
-                        desc: `1121 Pesticide Residue Free Golden Sella Rice is a premium variety of Basmati rice, celebrated globally for its extra-long grains, golden hue, and aromatic excellence. This rice undergoes a unique parboiling process that gives it a distinct golden color while enhancing its flavor, nutrition, and cooking performance.
-
-Its long, slender grains remain separate and fluffy after cooking, making it a top choice for biryanis, pilafs, and special rice dishes. With a flavor profile that blends nutty, earthy, and slightly floral notes, this rice not only elevates the taste of meals but also adds a visually appealing elongation upon cooking — perfect for gourmet presentations.`,
-                        Specification: [
-                            { "Purity": "95.00%" },
-                            { "Natural Admixture": "5.00%" },
-                            { "Average Grain Length": "8.35 MM" },
-                            { "Moisture": "12.5% Max." },
-                            { "Broken Grain": "1% Max." },
-                            { "Damage/Discolour Grain": "1% Max." },
-                            { "Immature Grain": "1% Max." },
-                            { "Foreign Matter": "Nil" },
-                            { "Packaging Type": "Jute bag, BOPP Bags, PP bag, Non-woven bag or as per buyer's choice." }
-                        ],
-                        knowFor: [
-                            "High Quality Rice",
-                            "Easy Cooking Rice",
-                            "High Nutritional Value",
-                            "Soft & Fluffy Texture",
-                            "Nutty, Earthy & Floral Aroma",
-                            "Ideal for Biryanis and Pilafs"
-                        ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
-                    },
-
-                    {
-                        name: "1509 Pesticide Residue Free Golden Sella Rice",
-                        slug: "1509-pesticide-residue-free-golden-sella-rice",
-                        desc: `1509 Pesticide Residue Free Golden Sella Rice is a popular choice for Indian and international cuisines, especially biryanis and other rice-based dishes that require separate, fluffy grains. It combines the traditional aroma and flavor of Basmati rice with the benefits of parboiling, making it less prone to breaking or clumping during cooking.
-
-The parboiling process not only enhances its visual appeal with a golden hue but also helps retain key nutrients from the outer grain layers. With a grain length of around 8.4 mm and cooking time of 15–20 minutes, this variety offers excellent consistency and quality, making it ideal for both home kitchens and food service establishments.`,
-                        Specification: [
-                            { "Purity": "95.00%" },
-                            { "Natural Admixture": "5.00%" },
-                            { "Average Grain Length": "8.40 MM" },
-                            { "Moisture": "12.5% Max." },
-                            { "Broken Grain": "1% Max." },
-                            { "Damage/Discolour Grain": "1% Max." },
-                            { "Immature Grain": "1% Max." },
-                            { "Foreign Matter": "Nil" },
-                            { "Packaging Type": "Jute bag, BOPP Bags, PP bag, Non-woven bag or as per buyer's choice." }
-                        ],
-                        knowFor: [
-                            "High Quality Rice",
-                            "Easy Cooking Rice",
-                            "High Nutritional Value",
-                            "Fluffy & Non-Sticky Texture",
-                            "Golden Hue from Parboiling",
-                            "Ideal for Biryanis and Global Cuisines"
-                        ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
-                    }
-                    ,
-                    {
-                        name: "Sugandha Pesticide Residue Free Golden Sella Rice",
-                        slug: "sugandha-pesticide-residue-free-golden-sella-rice",
-                        desc: `Sugandha Pesticide Residue Free Golden Sella Rice is a premium aromatic rice variety processed through a parboiling technique that gives it a rich golden hue. This method helps retain essential nutrients from the outer layers of the grain and ensures a firm, non-sticky texture when cooked.
-
-Primarily grown in regions like Uttar Pradesh and Bihar, Sugandha Golden Sella Rice features long, slender grains with a distinct nutty and floral aroma. It is highly versatile and commonly used in Indian and global cuisines for dishes such as biryani, pulao, and plain steamed rice. Its ability to remain fluffy and separate after cooking makes it a favorite for both traditional and modern recipes.`,
-                        Specification: [
-                            { "Purity": "95.00%" },
-                            { "Natural Admixture": "5.00%" },
-                            { "Average Grain Length": "7.90 MM" },
-                            { "Moisture": "12.5% Max." },
-                            { "Broken Grain": "1% Max." },
-                            { "Damage/Discolour Grain": "1% Max." },
-                            { "Immature Grain": "1% Max." },
-                            { "Foreign Matter": "Nil" },
-                            { "Packaging Type": "Jute bag, BOPP Bags, PP bag, Non-woven bag or as per buyer's choice." }
-                        ],
-                        knowFor: [
-                            "High Quality Rice",
-                            "Easy Cooking Rice",
-                            "High Nutritional Value",
-                            "Golden Hue from Parboiling",
-                            "Nutty & Floral Aroma",
-                            "Perfect for Pulao, Biryani, and Steamed Rice"
-                        ],
-                        imgUrl: "https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg"
-                    }
-
-
-
-                ]
-            },
+            }
 
             
         ],

@@ -119,29 +119,29 @@ export default function NonBasmatiRiceSection() {
   const riceTypes = [
     {
       id: 1,
-      name: 'PR 11/14 RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097314/P.R.-11-Steam-Rice_g9uyb6.jpg'
+      name: 'PR 11 Rice',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/PR-11_bxraks.jpg'
     },
     {
       id: 2,
       name: 'IR-64 PARBOILED RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1745917176/IR64_w8erum.jpg'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/IR-64_ym8lr4.jpg'
     },
     {
       id: 3,
       name: 'SONA MASOORI RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097363/Sona-Masoori-Steam_ez7nx0.jpg'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/Sona-Masoori-Rice_hobbgp.jpg'
     },
     {
       id: 4,
       name: 'JEERAKASALA RICE',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746097363/Sona-Masoori-raw_upnecp.jpg'
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652177/jeera-kasala_bxzqot.jpg'
     }
     ,
     {
       id: 5,
-      name: 'Sugandha Basmati Rice',
-      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1746096825/Sugandha-Steam-Rice_k5mlor.jpg'
+      name: 'PR 14 Rice',
+      mainImage: 'https://res.cloudinary.com/dwfn4hylt/image/upload/v1747652176/PR-14_ykjr7p.jpg'
     }
   ];
 

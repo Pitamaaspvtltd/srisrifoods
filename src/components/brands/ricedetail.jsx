@@ -18,7 +18,6 @@ const RiceDetails = () => {
       .join(" ")
 
     const matchedCategory = productLinks.find(cat => cat.category === formattedCategory || cat.category === categorySlug)
-console.log('matchedCategory', matchedCategory)
     if (!matchedCategory) {
       setError("Category not found")
       setLoading(false)
@@ -31,11 +30,9 @@ console.log('matchedCategory', matchedCategory)
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ")
     // Find the matched subcategory
-  console.log('subcategory', subcategory)
     const matchedSub = matchedCategory.items.find(
       item => console.log('item', item, formattedSubcategory) || item.name === formattedSubcategory
     )
-console.log('matchedSub', matchedSub)
     if (!matchedSub) {
       setError("Subcategory not found")
       setLoading(false)

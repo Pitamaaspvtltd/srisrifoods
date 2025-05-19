@@ -37,7 +37,7 @@ console.log('parentItem', parentItem);
           name: subitem.name,
           slug: subitem.slug,
           desc: subitem.desc,
-          image: parentItem.imgUrl || "/placeholder.svg",
+          image: subitem.imgUrl || "/placeholder.svg",
           category: matchedCategory.category,
           subcategory: parentItem.slug,
         }))

@@ -254,6 +254,11 @@ body:not(.navigating) .dropdown:hover > .sub-menu {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+.logo-container1 .logo {
+  width: 85px;
+}
+  
   .mobile-menu-icon {
     display: block;
   }

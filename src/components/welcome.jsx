@@ -1,7 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css';
 import './welcome.css';
-
+import { Link } from 'react-router-dom';
 import riceBowlImage from '../assets/Rice.png';
 import logo2 from '../assets/Logo_01.png';
 
@@ -30,11 +30,13 @@ const WelcomeSection = () => {
             </p>
           </div>
           
-          <div className="cta-container">
-            <button className="view-more-btn">
-              <span>View More</span>
-            </button>
-          </div>
+         <div className="cta-container">
+  <Link to="/about">
+    <button className="view-more-btn">
+      <span>View More</span>
+    </button>
+  </Link>
+</div>
 
         </div>
       </div>
