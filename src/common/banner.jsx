@@ -8,7 +8,7 @@ import aboutDesktop from '../assets/aboutban.png'; // Replace with actual file n
 
 // Mobile Backgrounds
 import homeMobile1 from '../assets/homemobile1.png';
-import aboutMobile from '../assets/aboutmob.jpg'; // Replace with actual file name
+import aboutMobile from '../assets/Banner_01.png'; // Replace with actual file name
 
 // Private Backgrounds
 import PrivateLabeling from '../assets/PrivateLabeling.png';
