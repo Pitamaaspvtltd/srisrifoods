@@ -10,6 +10,8 @@ import MissionSection from '../components/about/mission';
 import CoreValuesSection from '../components/about/corevalue';
 import ManufacturingFacilities from '../components/about/aboutinfra';
 import WhatWeDo from '../components/about/ourmission';
+import InfiniteScrollingMasonry from '../components/about/eventmedia';
+
 function About() {
   useEffect(() => {
     AOS.init({
@@ -29,7 +31,7 @@ function About() {
       <WhoWeAreSection />
       <WhatWeDo />
       <MissionSection />
-      
+      <InfiniteScrollingMasonry />
       <CoreValuesSection />
       <ManufacturingFacilities />
     </div>
