@@ -93,10 +93,10 @@ function EnquiryModal({ rice, onClose }) {
     };
   
     emailjs.send(
-      'service_fsfyhdc',
-      'template_nkf0hej',
+      'service_slzig6k',
+      'template_y0krn4j',
       templateParams,
-      'o-TwypZMd-hbWedRE'
+      'uE0CuWJsh78hqnywh'
     ).then(
       (response) => {
         toast.success('Enquiry submitted successfully!');
