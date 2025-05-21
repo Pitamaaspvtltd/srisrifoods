@@ -47,7 +47,7 @@ console.log('parentItem', parentItem);
     }
 
     setLoading(false)
-  }, [categorySlug])
+  }, [categorySlug, subcategory])
   console.log('products', products);
   return (
     <div className="category-page23">

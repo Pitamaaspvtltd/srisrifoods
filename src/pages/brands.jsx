@@ -5,7 +5,7 @@ import Banner from '../common/banner';
 
 import NameBrands from '../components/brands/NameBrands';
 // import OurRice from '../components/brands/OurRice';
-import OurRice from '../components/brands/ricedetail';
+// import OurRice from '../components/brands/ricedetail';
 
 
 function About() {

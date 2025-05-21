@@ -152,9 +152,9 @@ const Header = () => {
               ref={menuRef}
               onClick={isMobile ? toggleMobileMenu : undefined}
             >
-              <a href="#" onClick={(e) => e.preventDefault()}>
+              <Link  onClick={(e) => e.preventDefault()}>
                 Products <i className="fas fa-chevron-down"></i>
-              </a>
+              </Link>
               <ul className="sub-menu">
   {productLinks.map((category, index) => (
     <li key={index} className="dropdown">
