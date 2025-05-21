@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.17.1",
     "aos": "^2.3.4",
+    "jquery": "^3.7.1",
     "lucide-react": "^0.510.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -20,6 +21,7 @@
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.6",
+    "typescript": "^5.8.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
