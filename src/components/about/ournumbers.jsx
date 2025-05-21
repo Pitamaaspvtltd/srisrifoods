@@ -6,27 +6,30 @@ const CounterItem = ({ number, text, duration = 2000 }) => {
   const [isVisible, setIsVisible] = useState(false);
   const counterRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
-    }
-
-    return () => {
-      if (counterRef.current) {
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
         observer.disconnect();
       }
-    };
-  }, []);
+    },
+    { threshold: 0.1 }
+  );
+
+  const currentRef = counterRef.current; // ✅ Capture ref value once
+
+  if (currentRef) {
+    observer.observe(currentRef);
+  }
+
+  return () => {
+    if (currentRef) {
+      observer.disconnect(); // ✅ Use the captured value
+    }
+  };
+}, []);
+
 
   useEffect(() => {
     if (!isVisible) return;
@@ -76,7 +79,8 @@ export default function PremiumFoodExport() {
 
     <div className="counters-section">
       <div className="counter-box">
-        <CounterItem number="20" text="Years of Excellence" />
+ <CounterItem number={new Date().getFullYear() - 1987} text="Years of Excellence" />
+
       </div>
       <div className="counter-box">
         <CounterItem number="50" text="Countries Served" />

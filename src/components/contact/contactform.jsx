@@ -13,7 +13,7 @@ const ContactPage = () => {
 
   const [submitted, setSubmitted] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  // const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
   const videoRef = useRef(null);
 
@@ -27,26 +27,25 @@ const ContactPage = () => {
   }, []);
 
   // Try to play the video when component mounts
-  useEffect(() => {
-    const videoElement = videoRef.current;
-    if (videoElement) {
-      // Chrome often requires user interaction before autoplay
-      // This attempt might help in some cases
-      const playPromise = videoElement.play();
-      
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            console.log('Video playback started successfully');
-            setVideoLoaded(true);
-          })
-          .catch(error => {
-            console.error('Video playback failed:', error);
-            setVideoError(true);
-          });
-      }
+useEffect(() => {
+  const videoElement = videoRef.current;
+  if (videoElement) {
+    const playPromise = videoElement.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          console.log('Video playback started successfully');
+          // setVideoLoaded(true); ← removed
+        })
+        .catch(error => {
+          console.error('Video playback failed:', error);
+          setVideoError(true);
+        });
     }
-  }, []);
+  }
+}, []);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -88,16 +87,16 @@ const ContactPage = () => {
         {!isMobile && (
           <>
             <video 
-              ref={videoRef}
-              autoPlay 
-              muted 
-              loop 
-              playsInline 
-              width="100%"
-              onCanPlay={() => setVideoLoaded(true)}
-              onError={() => setVideoError(true)}
-              style={{ display: videoError ? 'none' : 'block' }}
-            >
+  ref={videoRef}
+  autoPlay 
+  muted 
+  loop 
+  playsInline 
+  width="100%"
+  onError={() => setVideoError(true)}
+  style={{ display: videoError ? 'none' : 'block' }}
+>
+
               <source
                 src="https://res.cloudinary.com/dwfn4hylt/video/upload/v1747378967/tractor2_h264_fixed_bogto2.mp4"
                 type="video/mp4"
@@ -143,14 +142,15 @@ const ContactPage = () => {
               <div>
                 <h3>Email Address</h3>
                 <p>sales@srisrifoods.com</p>
+                <p>shoubhitjain@srisrifoods.com</p>
               </div>
             </div>
             <div className="info-item">
               <i className="icon time-icon"></i>
               <div>
                 <h3>Opening Hours</h3>
-                <p>Monday - Friday: 9am - 6pm</p>
-                <p>Saturday: 10am - 4pm</p>
+                <p>Monday - Saturday: 9am - 6pm</p>
+                {/* <p>Saturday: 10am - 4pm</p> */}
                 <p>Sunday: Closed</p>
               </div>
             </div>
@@ -229,8 +229,8 @@ const ContactPage = () => {
           <a href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer">
             <img alt="X" src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/x_oib8ko.png" />
           </a>
-          <a href="https://youtube.com/yourpage" target="_blank" rel="noopener noreferrer">
-            <img alt="YouTube" src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/youtube_ioo7bb.png" />
+          <a href="https://www.linkedin.com/yourpage" target="_blank" rel="noopener noreferrer">
+            <img alt="linkedin" src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1747810592/Link_eeouwh.png" />
           </a>
         </div>
       </div>

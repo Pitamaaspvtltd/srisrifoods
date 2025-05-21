@@ -28,10 +28,10 @@ const Footer = () => {
       alt="Instagram" 
     />
   </a>
-  <a href="https://youtube.com" className="social-icon youtube" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/" className="social-icon youtube" target="_blank" rel="noopener noreferrer">
     <img 
-      src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1745921916/youtube_ioo7bb.png" 
-      alt="YouTube" 
+      src="https://res.cloudinary.com/dwfn4hylt/image/upload/v1747810592/Link_eeouwh.png" 
+      alt="linkedin" 
     />
   </a>
 </div>
@@ -66,11 +66,15 @@ const Footer = () => {
           <div className="company-info">
             <h2 className="company-name">SRI SRI FOODS</h2>
             <p className="company-address">2655, Naya Bazar, Delhi -110006</p>
-            <p className="company-address">KH. NO. 363/I, VIII, Hamidpur, Delhi -110036</p>
+       <p className="company-address">
+  <span style={{ fontWeight: 'bold', color: '#fff ' }}>Mill Address:</span> KH. NO. 363/I, VIII, Hamidpur, Delhi -110036
+</p>
+
+
             <p className="company-contact">Mob.: +91 8130388382 ,
 +91 9625507543</p>
             {/* <p className="company-contact">Website : www.srisrifoods.com</p> */}
-            <p className="company-contact">E-mail : sales@srisrifoods.com</p>
+            <p className="company-contact">E-mail : sales@srisrifoods.com , shoubhitjain@srisrifoods.com</p>
           </div>
         </div>
       </div>

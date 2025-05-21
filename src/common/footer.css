@@ -104,7 +104,7 @@
 
 .company-info {
   margin-bottom: 30px;
-  max-width: 380px;
+  /* max-width: 380px; */
 }
 
 .company-name {
@@ -117,7 +117,7 @@
 }
 
 .company-address, .company-contact {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   line-height: 1.6;
 }

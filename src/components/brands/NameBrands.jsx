@@ -15,10 +15,10 @@ import brand4 from '../../assets/brand4.png';
 const NameBrands = () => {
   const brands = [
     { 
-      name: "Eid Ka Chand Golden", 
-      type: "Premium Basmati Rice", 
+      name: "Eid Ka Chand", 
+      type: "Traditional Basmati Rice", 
       img: b2,
-      description: "Eid Ka Chand Golden Basmati Rice is suitable for gourmet recipes and premium dining because of its golden colour and splendid aroma.",
+      description: "Eid Ka Chand Traditional XXXL Classic  Basmati Rice is suitable for gourmet recipes and premium dining because of its golden colour and splendid aroma.",
       benefits: [
         "Long slender grains with a soft and fragrant finish",
         "Adds a touch of class to every dish",
@@ -29,7 +29,7 @@ const NameBrands = () => {
       name: "Eid Ka Chand", 
       type: "Traditional Basmati Rice", 
       img: b1,
-      description: "Naturally parboiled, Eid Ka Chand Traditional Basmati Rice delivers the goodness of vitamins and unique texture for enhanced biryani or special occasion.",
+      description: "Naturally parboiled, Eid Ka Chand Traditional Long Grain  Basmati Rice delivers the goodness of vitamins and unique texture for enhanced biryani or special occasion.",
       benefits: [
         "Long fluffy grains ideal for every dish preparation",
         "Rich in aroma and natural flavor",
@@ -40,7 +40,7 @@ const NameBrands = () => {
       name: "Sri Sri Steam", 
       type: "Basmati Rice", 
       img: b3,
-      description: "Famous for its aroma, Sri Sri Steam Basmati Rice is the rice of choice for daily meals and unusual occasions.",
+      description: "Famous for its aroma, Sri Sri 1121  Basmati Rice XXXL Premium is the rice of choice for daily meals and unusual occasions.",
       benefits: [
         "Light and fluffy texture when cooked",
         "Versatile for everyday meals or special occasions",
